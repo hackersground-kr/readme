@@ -3,17 +3,16 @@ server:
 
 eureka:
     client:
-        service-url:
+      service-url:
             defaultZone: https://readme-back-eureka-server.azurewebsites.net/eureka
-            fetch-registry: true
-            register-with-eureka: true
+      register-with-eureka: true
+      fetch-registry: true
 
 spring:
     application:
         name: readme-gateway
     cloud:
         gateway:
-
             default-filters:
                 - name: GlobalFilter
             routes:
