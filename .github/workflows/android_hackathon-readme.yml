@@ -19,6 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
+          name: java-app
           java-version: '17'
 
       - name: Grant execute permission for gradlew
@@ -32,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: app/build/outputs/apk/appCenter/debug/
+          path: app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,6 +52,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
+          name: java-app
           app-name: 'hackathon-readme'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C7D64ED7420436D8933A24E7F320914 }}
