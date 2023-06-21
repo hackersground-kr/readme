@@ -1,0 +1,33 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.alt.readmeuserservice.mapper.UserMapper">
+
+    <resultMap id="result" type="com.alt.readmeuserservice.domain.user.User">
+        <result property="idx" column="idx" />
+        <result property="name" column="name" />
+        <result property="image" column="image" />
+        <result property="email" column="email" />
+        <result property="password" column="password" />
+        <result property="type" column="type" />
+    </resultMap>
+    <select id="getByEmail" resultMap="result">
+        SELECT * FROM user WHERE email = #{email};
+    </select>
+    <insert id="register" parameterType="com.alt.readmeuserservice.domain.user.User" keyProperty="idx" useGeneratedKeys="true">
+        INSERT INTO user(
+            email
+            , name
+            , password
+            , type
+        )
+        VALUE
+        (
+            #{email}
+            , #{name}
+            , #{password}
+            , #{type}
+        )
+    </insert>
+</mapper>

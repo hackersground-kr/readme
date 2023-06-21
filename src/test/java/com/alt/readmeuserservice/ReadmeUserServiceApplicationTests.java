@@ -1,10 +1,10 @@
-package com.alt.readmegateway;
+package com.alt.readmeuserservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ReadmeGatewayApplicationTests {
+class ReadmeUserServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
