@@ -12,11 +12,5 @@ class AccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
-        AppCenter.start(
-            application, "dac78000-80e9-4658-9707-1db983d47a8c",
-            Analytics::class.java,
-            Crashes::class.java
-        )
     }
 }
