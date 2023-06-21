@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.hackathon.readme.app-mergeDebugResources-28:/layout/fragment_login.xml",
+        "source": "com.hackathon.readme.app-main-31:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.hackathon.readme.app-mergeDebugResources-28:/layout/fragment_signup.xml",
+        "source": "com.hackathon.readme.app-main-31:/layout/fragment_signup.xml"
+    },
+    {
+        "merged": "com.hackathon.readme.app-mergeDebugResources-28:/layout/activity_account.xml",
+        "source": "com.hackathon.readme.app-main-31:/layout/activity_account.xml"
+    },
+    {
+        "merged": "com.hackathon.readme.app-mergeDebugResources-28:/layout/activity_home.xml",
+        "source": "com.hackathon.readme.app-main-31:/layout/activity_home.xml"
+    }
+]
