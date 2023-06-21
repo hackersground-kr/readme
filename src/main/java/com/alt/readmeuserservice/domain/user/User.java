@@ -9,13 +9,13 @@ import lombok.Data;
 
 @Data
 public class User {
-    private Long idx;
-    private String name;
-    private String email;
+    protected Long idx;
+    protected String name;
+    protected String email;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private String password;
-    private Character type;
-    private String location;
-    private Long image;
-    private String intro;
+    protected String password;
+    protected Character type;
+    protected String location;
+    protected Long image;
+    protected String intro;
 }

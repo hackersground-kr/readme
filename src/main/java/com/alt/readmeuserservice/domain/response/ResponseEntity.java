@@ -6,6 +6,6 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 public class ResponseEntity {
-    protected int status;
+    protected Integer status;
     protected Object data;
 }
