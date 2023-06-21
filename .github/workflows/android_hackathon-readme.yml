@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/build/output/apk/appCenter/debug/app-appCenter-debug.apk'
+          path: '${{ github.workspace }}/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk'
 
   deploy:
     runs-on: ubuntu-latest
