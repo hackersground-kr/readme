@@ -53,4 +53,4 @@ jobs:
           app-name: 'readme-back'
           slot-name: 'eureka-server'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0FB6EC97F66D4BF2AA3323F18C640FE8 }}
-          package: '*.jar'
+          package: 'readme-eureka-server-0.0.1-SNAPSHOT.jar'
