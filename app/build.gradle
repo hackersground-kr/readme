@@ -57,7 +57,6 @@ dependencies {
 
 
     def appCenterSdkVersion2 = "3.3.0"
-    appCenterImplementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion2}"
     googlePlayImplementation "com.microsoft.appcenter:appcenter-distribute-play:${appCenterSdkVersion2}"
     //retrofit 2
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
