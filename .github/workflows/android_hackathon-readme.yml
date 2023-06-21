@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: app/build/outputs/apk/app-debug.apk # 수정된 부분
+          path: app/build/outputs/apk/app-appCenter-debug.apk
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,4 +54,4 @@ jobs:
           app-name: 'hackathon-readme'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C7D64ED7420436D8933A24E7F320914 }}
-          package: 'app-debug.apk' # 수정된 부분
+          package: 'app-appCenter-debug.apk'
