@@ -1,6 +1,0 @@
-com.hackathon.readme.test.app-annotation-experimental-1.3.0-0 /Users/hamtory/.gradle/caches/transforms-3/5bafd960f937e2bdcc0d5b82a02b70ce/transformed/annotation-experimental-1.3.0/res
-com.hackathon.readme.test.app-core-1.5.0-1 /Users/hamtory/.gradle/caches/transforms-3/674592922f3e59a6ff5e2c8d4b77176c/transformed/core-1.5.0/res
-com.hackathon.readme.test.app-androidTest-2 /Users/hamtory/Documents/github/readme/android/app/build/generated/res/resValues/androidTest/debug
-com.hackathon.readme.test.app-mergeDebugAndroidTestResources-3 /Users/hamtory/Documents/github/readme/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.hackathon.readme.test.app-mergeDebugAndroidTestResources-4 /Users/hamtory/Documents/github/readme/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.hackathon.readme.test.app-merged_res-5 /Users/hamtory/Documents/github/readme/android/app/build/intermediates/merged_res/debugAndroidTest

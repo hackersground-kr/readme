@@ -1,3 +1,0 @@
-com.hackathon.readme.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
