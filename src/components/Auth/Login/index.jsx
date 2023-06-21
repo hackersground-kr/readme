@@ -14,8 +14,8 @@ export const Login = () => {
             <br />
             ReadMe
           </S.FormTitle>
-          <S.FormInput type="email" />
-          <S.FormInput2 type="password" />
+          <S.FormInput type="email" placeholder="email"/>
+          <S.FormInput2 type="password" placeholder="password"/>
           <S.FormButton>로그인</S.FormButton>
           <S.LoginHref>
             아직 회원이 아니신가요?{" "}
