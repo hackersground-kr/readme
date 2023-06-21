@@ -1,0 +1,40 @@
+server:
+    port: 8082
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+            fetch-registry: true
+            register-with-eureka: true
+
+spring:
+    application:
+        name: readme-gateway
+    cloud:
+        gateway:
+
+            default-filters:
+                - name: GlobalFilter
+            routes:
+                - id: user-service
+                  predicates:
+                      - Path=/user/**
+                  uri: lb://README-USER-SERVICE
+                  filters:
+                      - AuthorizationHeaderFilter
+
+                - id: user-service
+                  predicates:
+                      - Path=/login.do
+                      - Method=POST
+                  uri: lb://README-USER-SERVICE
+                  filters:
+                      - RewritePath=/user/(?<segment>.*),/$\{segment}
+                - id: user-service
+                  predicates:
+                      - Path=/signup.do
+                      - Method=POST
+                  uri: lb://README-USER-SERVICE
+                  filters:
+                      - RewritePath=/user/(?<segment>.*),/$\{segment}
