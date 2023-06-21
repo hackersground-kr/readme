@@ -1,7 +1,7 @@
 import React from "react";
 
 import smile from "../../../assets/img/smile.png";
-import img from "../../../assets/img/도술 1.png";
+import img from "../../../assets/img/dummy.png";
 import group from "../../../assets/svg/Group.svg";
 import location from "../../../assets/svg/Location.svg";
 import image from "../../../assets/svg/image.svg";
