@@ -3,7 +3,7 @@
 buildscript {
     // 다른 설정들...
     ext {
-        buildToolsVersion = "31.0.0" // 사용하고자 하는 빌드 도구 버전으로 변경
+        buildToolsVersion = "33"
     }
     // 다른 설정들...
 }
