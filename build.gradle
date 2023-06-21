@@ -35,5 +35,5 @@ tasks.named('test') {
 }
 
 jar {
-	
+	file("$buildDir/dist")
 }
