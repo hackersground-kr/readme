@@ -37,6 +37,9 @@ android {
 
 dependencies {
 
+    // material design(BottomNavigationView)
+    implementation 'com.google.android.material:material:1.2.0'
+
     //app center
     def appCenterSdkVersion = '4.4.5'
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"

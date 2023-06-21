@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.heyhong.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/buildingFragment"
+        android:name="com.example.heyhong.fragment.BuildingFragment"
+        android:label="BuildingFragment"
+        tools:layout="@layout/fragment_building" />
+
+    <fragment
+        android:id="@+id/facilityFragment"
+        android:name="com.example.heyhong.fragment.FacilityFragment"
+        android:label="FacilityFragment"
+        tools:layout="@layout/fragment_facility" />
+
+    <fragment
+        android:id="@+id/noticeFragment"
+        android:name="com.example.heyhong.fragment.NoticeFragment"
+        android:label="NoticeFragment"
+        tools:layout="@layout/fragment_notice" />
+
+</navigation>
