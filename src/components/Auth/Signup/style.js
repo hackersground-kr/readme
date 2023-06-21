@@ -1,4 +1,11 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+    body {
+        background: #FAFAFA;
+    }
+`;
+
 
 export const Form = styled.form`
   position: absolute;
@@ -210,4 +217,24 @@ export const RadioText2 = styled.span`
   /* #000000 */
 
   color: #000000;
+`;
+
+export const FormTypeInput = styled.input`
+  position: absolute;
+  width: 502px;
+  height: 15px;
+  left: 25px;
+  top: 670px;
+  margin-bottom: 20px;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* #F2F2F2 */
+
+  background: #f2f2f2;
+  border-radius: 10px;
+
+  font-size: 25px;
+  padding: 20px;
 `;
