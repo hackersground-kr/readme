@@ -47,6 +47,7 @@ android {
 
 dependencies {
 
+
     def appCenterSdkVersion1 = '5.0.0'
     implementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion1}"
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion1}"
