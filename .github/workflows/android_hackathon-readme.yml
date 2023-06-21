@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: readme/app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
+          path: app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
 
   deploy:
     runs-on: ubuntu-latest
