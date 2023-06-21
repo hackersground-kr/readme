@@ -1,8 +1,9 @@
 package com.hackathon.readmeandroid.view.activity.account
 
+import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hackathon.readmeandroid.R
+import androidx.multidex.MultiDex
 import com.hackathon.readmeandroid.databinding.ActivityMainBinding
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
@@ -18,5 +19,10 @@ class MainActivity : AppCompatActivity() {
             application, "dac78000-80e9-4658-9707-1db983d47a8c",
             Analytics::class.java, Crashes::class.java
         )
+    }
+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(base)
+        MultiDex.install(this)
     }
 }
