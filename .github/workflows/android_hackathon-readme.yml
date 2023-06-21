@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '17'
-          
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
@@ -28,6 +28,7 @@ jobs:
         run: ./gradlew clean build
 
       - name: Upload artifact for deployment job
+        if: success() # 빌드가 성공한 경우에만 아티팩트 업로드
         uses: actions/upload-artifact@v2
         with:
           name: java-app
