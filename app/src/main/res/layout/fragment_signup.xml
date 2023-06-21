@@ -1,14 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragment.account.SignupFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="회원가입"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="회원가입"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_mail"
+        app:layout_constraintStart_toStartOf="@+id/text_mail" />
+
+    <EditText
+        android:id="@+id/text_mail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/PretendardBlack"
+        android:layout_marginTop="50dp"
+        android:text="이메일"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="비밀번호"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_password"
+        app:layout_constraintStart_toStartOf="@+id/text_password" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="비밀번호"
+        android:layout_marginTop="50dp"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_mail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="비밀번호 확인"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_check_password"
+        app:layout_constraintStart_toStartOf="@+id/text_check_password" />
+
+    <EditText
+        android:id="@+id/text_check_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="비밀번호"
+        android:layout_marginTop="50dp"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="이름"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_name"
+        app:layout_constraintStart_toStartOf="@+id/text_name" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="실명을 입력하세요"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_check_password" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="학교"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_school_name"
+        app:layout_constraintStart_toStartOf="@+id/text_name" />
+
+    <EditText
+        android:id="@+id/text_school_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/PretendardBlack"
+        android:layout_marginTop="50dp"
+        android:text="실명을 입력하세요"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:Color="#17BDFF"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/PretendardBlack"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_school_name" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
