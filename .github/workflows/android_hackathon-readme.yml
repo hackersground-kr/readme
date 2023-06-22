@@ -54,4 +54,4 @@ jobs:
           app-name: 'hackathon-readme'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C7D64ED7420436D8933A24E7F320914 }}
-          package: 'build/*.apk'
+          package: '*.apk'
