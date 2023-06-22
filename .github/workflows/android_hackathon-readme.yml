@@ -30,7 +30,7 @@ jobs:
           name: app
           path: readme/app/build/outputs/apk/appCenter/debug/
       - name: upload artefact to App Center
-        uses: wzieba/AppCenter-Github-Action@v1
+        uses: actions/AppCenter-Github-Action@v1
         with:
           appName:
           token: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DFCA0C9562BF4BD188504B74CF5A7C9D }}
