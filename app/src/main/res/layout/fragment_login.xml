@@ -1,14 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.main.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Fragment two!" />
+        android:id="@+id/readme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/pretendard"
+        android:text="서로를 이끌다\nReadMe"
+        android:textAppearance="@style/readme"
+        app:layout_constraintStart_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
+        android:layout_marginBottom="5dp"
+        android:text="이메일"
+        android:textColor="#636363"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/mail_text"
+        app:layout_constraintStart_toStartOf="@+id/mail_text" />
+
+
+    <EditText
+        android:id="@+id/mail_text"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:textSize="13sp"
+        android:paddingStart="20dp"
+        android:maxLines="1"
+        android:hint="이메일을 입력해주세요"
+        android:textColorHint="#66636363"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="@+id/readme"
+        app:layout_constraintTop_toBottomOf="@+id/readme" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
+        android:layout_marginBottom="5dp"
+        android:text="비밀번호"
+        android:textColor="#636363"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_text"
+        app:layout_constraintStart_toStartOf="@+id/password_text" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:hint="비밀번호를 입력해주세요"
+        android:paddingStart="20dp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textSize="13sp"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#66636363"
+        app:layout_constraintStart_toStartOf="@+id/readme"
+        app:layout_constraintTop_toBottomOf="@+id/mail_text" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="180dp"
+        android:color="#17BDFF"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/pretendard"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text="계정이 없으신가요?"
+            android:textColor="#BFBFBF"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signup_text"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text=" 회원가입"
+            android:textColor="#17BDFF"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

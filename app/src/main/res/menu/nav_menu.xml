@@ -6,19 +6,19 @@
     <item
         android:id="@+id/mypageFragment"
         android:enabled="true"
-        android:icon="@drawable/icon_user"
+        android:icon="@drawable/icon_user_true"
         android:title="내 정보"/>
 
     <item
         android:id="@+id/homeFragment"
         android:enabled="true"
-        android:icon="@drawable/icon_home"
+        android:icon="@drawable/icon_home_test"
         android:title="홈"/>
 
     <item
         android:id="@+id/favoritesFragment"
         android:enabled="true"
-        android:icon="@drawable/icon_heart"
+        android:icon="@drawable/icon_heart_test"
         android:title="관심 목록"/>
 
 

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.microsoft.appcenter:appcenter-crashes:4.4.5@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1fba6c5c3834319635060d8840a5dcf1/transformed/appcenter-crashes-4.4.5/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e5e54069820fcaf186131d888a32c5fb/transformed/appcenter-crashes-4.4.5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1fba6c5c3834319635060d8840a5dcf1/transformed/appcenter-crashes-4.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1fba6c5c3834319635060d8840a5dcf1/transformed/appcenter-crashes-4.4.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e5e54069820fcaf186131d888a32c5fb/transformed/appcenter-crashes-4.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e5e54069820fcaf186131d888a32c5fb/transformed/appcenter-crashes-4.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.appcenter/appcenter-crashes/4.4.5/56bec2e9e4c73313ad8329eccd31890552e5f3db/appcenter-crashes-4.4.5-javadoc.jar!/" />

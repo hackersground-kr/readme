@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.activity.main.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Fragment One!" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/pretendard"
+        android:text="내 정보"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        android:layout_width="238dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/pretendard"
+        android:text="당신을 어필할 수 있는 정보를 넣고
+회사 컨택을 이끌어보세요!"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/Img"
+        android:src="@drawable/ellipse_7"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
+        android:text="이경민"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Img"
+        app:layout_constraintStart_toStartOf="@+id/Img"
+        app:layout_constraintTop_toBottomOf="@+id/Img" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
+        android:gravity="center_horizontal"
+        android:text="lkm060825@gmail.com\n대구소프트웨어마이스터고등학교\n(컴퓨터 공학, Android, Kotlin)\n2000.01.01 현 3학년\n대구광역시 동구 안심로 16길 어쩌고"
+        android:textColor="#FF727272"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView3"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView3"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

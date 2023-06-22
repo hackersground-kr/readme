@@ -59,43 +59,43 @@ class MainFragment : Fragment() {
         when (position) {
             0 -> {
                 data.putString("0","IT/정보통신")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             1 -> {
                 data.putString("1","건설")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             2 -> {
                 data.putString("2","교육")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             3 -> {
                 data.putString("3","금융/은행")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             4 -> {
                 data.putString("4","문화/예술/디자인")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             5 -> {
                 data.putString("5","미디어/광고")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             6 -> {
                 data.putString("6","서비스")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             7 -> {
                 data.putString("7","의료/제약")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             8 -> {
                 data.putString("8","제조/생산/화학")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             9 -> {
                 data.putString("9","판매/유통")
-                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+                navigateToDestinationWithArgs(R.id.action_homeFragment_to_enterpriseInformationListFragment, data)
             }
             else -> {
                 toast("ERROR")
