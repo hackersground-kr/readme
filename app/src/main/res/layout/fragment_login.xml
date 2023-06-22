@@ -6,14 +6,22 @@
     tools:context=".view.activity.main.MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Fragment two!" />
+        android:id="@+id/readme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/pretendard"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="40dp"
+        android:text="서로를 이끌다\nReadMe"
+        android:textAppearance="@style/readme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< Updated upstream
+
+
 </FrameLayout>
-=======
 
     <TextView
         android:layout_width="wrap_content"
