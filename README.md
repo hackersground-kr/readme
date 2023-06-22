@@ -37,27 +37,29 @@
 <br>
 <br>
 - Backend
- ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.
- ## 2. App Services [웹 앱] 만들기를 만듭니다.
- ## 3. `정적 웹앱`을 생성합니다.
+<br>
+ ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.<br>
+ ## 2. App Services [웹 앱] 만들기를 만듭니다.<br>
+ ## 3. `정적 웹앱`을 생성합니다.<br>
  ## 4. 총 2개의 서비스를 생성합니다.
  <br>
-`기본`
- |설정|값|
- |:---|:---|
- |이름|readme-user-service|
- |게시|코드|
- |런타임 스택|Java 17 SE|
- |운영체제|Linux|
- |지역|east asia|
+ `기본`
+|설정|값|
+|:---|:---|
+|이름|readme-user-service|
+|게시|코드|
+|런타임 스택|Java 17 SE|
+|운영체제|Linux|
+|지역|east asia|
  <br>
-`배포`
- |설정|값|
- |:---|:---|
- |원본|GitHub 선택|
- |조직|hackersground-kr 선택|
- |리포지토리|readme 선택|
- |분기|back-user-service 선택|
+ `배포`
+|설정|값|
+|:---|:---|
+|원본|GitHub 선택|
+|조직|hackersground-kr 선택|
+|리포지토리|readme 선택|
+|분기|back-user-service 선택|
+ <br>
  ## 5. 검토후 생성합니다.
 <br>
 <br>
