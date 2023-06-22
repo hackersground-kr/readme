@@ -41,6 +41,30 @@
  ## 3. `정적 웹앱`을 검색합니다.
  ## 4. 정적 웹앱을 선택합니다. 
  ## 5. 만들기를 클릭합니다.
- ##
+ ## <img width="772" alt="스크린샷 2023-06-22 오후 6 05 48" src="https://github.com/hackersground-kr/readme/assets/89149734/27288a3d-c912-4c85-a131-c2049357e161">
+|설정|값|
+|:---|:---|
+|구독|Azure 구독을 선택합니다.|
+|리소스 그룹|rg-hg-readme를 선택합니다.|
+|이름|ReadMe-Web을 입력합니다.|
+|계획 유형|무료 선택|
+|Azure Functions API 및 스테이징 환경을 위한 영역|East Asia선택|
 
+<img width="763" alt="스크린샷 2023-06-22 오후 6 54 34" src="https://github.com/hackersground-kr/readme/assets/89149734/370cab71-4709-4c38-8342-4cbbceec420c">
 
+|설정|값|
+|:---|:---|
+|원본|GitHub 선택|
+|조직|hackersground-kr 선택|
+|리포지토리|readme 선택|
+|분기|Web 선택|
+
+<img width="742" alt="스크린샷 2023-06-22 오후 6 58 22" src="https://github.com/hackersground-kr/readme/assets/89149734/0430b452-80e8-4bdb-b641-a36085859606">
+
+|설정|값|
+|:---|:---|
+|빌드 사전 설정|React 선택|
+|앱 위치| / 입력|
+나머진 수정 X
+
+## 6. 검토 + 만들기 클릭
