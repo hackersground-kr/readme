@@ -6,7 +6,7 @@ name: Build and deploy JAR app to Azure Web App - back-search-service
 on:
   push:
     branches:
-        - back-search-service
+      - back-search-service
   workflow_dispatch:
 
 jobs:
