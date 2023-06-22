@@ -3,7 +3,8 @@ name: Build and Deploy to App Center
 on:
   push:
     branches:
-      -Android2
+      - Android2
+  workflow_dispatch:
 
 jobs:
   apk:
