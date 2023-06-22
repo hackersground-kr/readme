@@ -67,7 +67,7 @@ export const useSignup = () => {
           } catch (error) {
             ToastError("회원가입에 실패했습니다.\n관리자에게 문의해주세요");
           }
-        } else if (userType === "campany") {
+        } else if (userType === "company") {
           try {
             // console.log(email, password, selectOption, selectedType, userNumber, URL);
             const response = await axios.post(Company_URL, {
