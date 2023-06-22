@@ -7,7 +7,7 @@
     tools:context=".view.activity.main.MainActivity">
 
     <TextView
-        android:id="@+id/readme"
+        android:id="@+id/favorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -15,40 +15,24 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/pretendard"
-        android:text="ReadMe"
+        android:text="관심 목록"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/home_text1"
+        android:id="@+id/favorite_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/pretendard"
-        android:gravity="center"
-        android:text="당신에게 딱 맞는 대구(경북) 회사를 찾아보세요."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/readme" />
-
-    <TextView
-        android:id="@+id/some_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/pretendard"
-        android:gravity="center"
-        android:text="우린 당신에게 도움이 될때까지 이끌어줄게요!"
+        android:gravity="left"
+        android:text="당신이 추가한 관심 회사들을\n확인할 수 있어요!"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_text1" />
+        app:layout_constraintTop_toBottomOf="@+id/favorite" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -58,7 +42,7 @@
         app:layout_constraintGuide_begin="175dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/major_list_scroll"
+        android:id="@+id/enterprise_list_scroll"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="0dp"

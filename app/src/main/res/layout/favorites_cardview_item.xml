@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    android:layout_margin="17dp"
+    android:padding="10dp"
+    app:cardElevation="10dp"
+    android:clickable="true"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/favorite_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/favorite_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/develop_image"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/enterprise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/pretendard"
+                android:text="대구에 있는 회사"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/enterprise_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:fontFamily="@font/pretendard"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:text="대구광역시 달성군\n구지면 창리로 어쩌dddd" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

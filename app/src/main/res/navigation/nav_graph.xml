@@ -8,26 +8,20 @@
 
 
     <fragment
-        android:id="@+id/mypageFragment"
+        android:id="@+id/homefragment"
         android:name="com.hackathon.readmeandroid.view.fragment.main.MyPageFragment"
         android:label="MyPageFragment"
-        tools:layout="@layout/fragment_my_page" />
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.hackathon.readmeandroid.view.fragment.main.MainFragment"
-        android:label="MainFragment"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_homeFragment_to_favoritesFragment"
-            app:destination="@id/favoritesFragment" />
+            android:id="@+id/action_homefragment_to_enterprisefragment"
+            app:destination="@id/enterprisefragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/favoritesFragment"
+        android:id="@+id/enterprisefragment"
         android:name="com.hackathon.readmeandroid.view.fragment.main.FavoritesFragment"
         android:label="FavoritesFragment"
-        tools:layout="@layout/fragment_favorites" />
+        tools:layout="@layout/fragment_enterprise_information_list" />
 
 
 </navigation>

@@ -1,19 +1,23 @@
 package com.hackathon.readmeandroid.controller
 
+import MainFragment
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.hackathon.readmeandroid.R
 import com.hackathon.readmeandroid.model.ItemCardMain
+import com.hackathon.readmeandroid.view.fragment.main.EnterpriseInformationListFragment
 
-class MainRecyclerView (items: ArrayList<ItemCardMain>) : RecyclerView.Adapter<MainRecyclerView.MyViewHolder>() {
+class MainRecyclerView(items: ArrayList<ItemCardMain>) : RecyclerView.Adapter<MainRecyclerView.MyViewHolder>(){
 
     var items = items
+    private val mainFragment = MainFragment()
 
     inner class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
@@ -38,12 +42,13 @@ class MainRecyclerView (items: ArrayList<ItemCardMain>) : RecyclerView.Adapter<M
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.bind(position)
+        holder.tvImage.setOnClickListener{
+            Log.d("클릭","이동")
+            mainFragment.onclick(position)
+        }
     }
 
     override fun getItemCount(): Int = items.size
 
-    fun addPerson(item: ItemCardMain) {
-        items.add(item)
-    }
 
 }

@@ -1,4 +1,3 @@
-import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -6,6 +5,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.hackathon.readmeandroid.R
 import com.hackathon.readmeandroid.controller.MainRecyclerView
@@ -16,17 +16,12 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentMainBinding.inflate(inflater, container, false)
 
         val recyclerView by lazy {
             binding.majorListScroll
         }
-
-        binding.majorListScroll.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_favoritesFragment)
-        }
-
 
         val titles = listOf(
             "IT/정보통신", "건설", "교육", "금융/은행", "문화/예술/디자인",
@@ -57,5 +52,72 @@ class MainFragment : Fragment() {
 
 
         return binding.root
+    }
+
+    fun onclick(position: Int) {
+        val data = Bundle()
+        when (position) {
+            0 -> {
+                data.putString("0","IT/정보통신")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            1 -> {
+                data.putString("1","건설")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            2 -> {
+                data.putString("2","교육")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            3 -> {
+                data.putString("3","금융/은행")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            4 -> {
+                data.putString("4","문화/예술/디자인")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            5 -> {
+                data.putString("5","미디어/광고")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            6 -> {
+                data.putString("6","서비스")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            7 -> {
+                data.putString("7","의료/제약")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            8 -> {
+                data.putString("8","제조/생산/화학")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            9 -> {
+                data.putString("9","판매/유통")
+                navigateToDestinationWithArgs(R.id.action_homefragment_to_enterprisefragment, data)
+            }
+            else -> {
+                toast("ERROR")
+            }
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        // 현 Activity 에 연결된 Fragment 관리하는 supportFragmentManager 를 통해 Fragment 전환
+        activity?.supportFragmentManager?.beginTransaction()?.apply {
+            replace(R.id.account_screen, fragment)
+            addToBackStack(null)
+            commit()
+        }
+    }
+
+    private fun toast(message: String) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT)
+    }
+
+    fun Fragment.navigateToDestinationWithArgs(destinationId: Int, args: Bundle) {
+        val navController = findNavController()
+        navController.navigate(destinationId, args)
     }
 }

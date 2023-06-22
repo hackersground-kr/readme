@@ -3,14 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.account.SignupFragment">
 
     <EditText
         android:id="@+id/text_mail"
@@ -151,7 +145,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Signup_button"
+        android:id="@+id/appCompatButton"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
