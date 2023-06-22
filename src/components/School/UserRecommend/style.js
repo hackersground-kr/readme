@@ -123,3 +123,39 @@ export const Waiting = styled.div`
   font-family: Pretendard;
   font-weight: 500;
 `;
+
+export const NoButton = styled.button`
+  position: relative;
+  right: -500px;
+
+  width: 100px;
+  height: 50px;
+
+  border-radius: 20px;
+  border: 1px solid #17bdff;
+  background: #ff1741;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.25);
+
+  color: #fff;
+  font-size: 20px;
+  font-family: Pretendard;
+  font-weight: 500;
+`;
+
+export const YesButton = styled.button`
+  position: relative;
+  right: -500px;
+
+  width: 100px;
+  height: 50px;
+
+  border-radius: 20px;
+  border: 1px solid #17bdff;
+  background: #17BDFF;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.25);
+
+  color: #fff;
+  font-size: 20px;
+  font-family: Pretendard;
+  font-weight: 500;
+`;

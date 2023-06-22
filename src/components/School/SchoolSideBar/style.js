@@ -13,6 +13,7 @@ export const Logo = styled.div`
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
+  cursor: pointer;
 `;
 
 export const MenuItems = styled.div`
