@@ -81,7 +81,7 @@ export const useSignup = () => {
               income: 100000000,
               employee: userNumber,
             });
-            console.log(response);
+            console.log(response);                        
             ToastSuccess("회원가입에 성공하였습니다.");
             navigate("/login");
           } catch (error) {
