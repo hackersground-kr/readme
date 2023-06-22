@@ -6,11 +6,13 @@ import { Signup } from "../components/Auth/Signup";
 import { HomePage } from "../pages/Home";
 import { UserRecommendPage } from "../pages/UserRecommend";
 import { List } from "../pages/List";
+import NotFound from "../pages/NotFound";
 
 export const Router = () => {
   return (
     <div>
       <Routes>
+      <Route path="*" element={<NotFound />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/list" element={<List />} />
         <Route path="/recommend" element={<UserRecommendPage />} />
