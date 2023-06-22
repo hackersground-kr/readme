@@ -51,10 +51,11 @@ $ git checkout Android2
 ## 4. 안드로이드 스튜디오 오른쪽 밑에 Build APK(s) 창이 나온것을 확인 한후 locate를 클릭한다 그리고 나오는 .APK파일 위치를 기억한다
 ## 5. https://appcenter.ms/apps 사이트에 들어가 SIGN IN을 클릭하여 로그인을 한다 필요할 경우 회원가입을 한다
 ## 6. 로그인이 완료 되었을 경우 오른쪽 위에 있는 Add new 파란색 버튼을 클릭한다.
-## 7. Add new app를 선택한후 자신이 원하는 App name을 적고 OS를 Android로 선택한다, Platform는 Java / Kotlin을 선택한다 그런다음 Add new app을 클릭하여 app을 만든다 왼쪽 Distribute을 선택한뒤 New release를 클릭한다 그런다음 기억하였던 APK파일을 찾아 선택을 한뒤
-로딩이 완료될때까지 기다린뒤 Next버튼이 활성화 되었다면 Next버튼을 클릭한다
-## 8. 필요할 경우 Notes를 작성하고 아니면 Next를 클릭한다 그다음으로 Collaborators를 클릭한뒤 Next버튼을 클릭한다, 그리고 마지막으로 Distribute 버튼을 클릭하고 성공적으로 저장을 한것을 확인한다.
-## 9. 그다음 다운을 원하는 앱을 선택한뒤 오른쪽위에 부분을 보면 Download_icon를 클릭한다 그러면 핸드폰일경우 다운이 받아질것이고 데스크탑이라면 QR코드가 나올것이다 QR코드가 나왔을 경우 핸드폰으로 스캔하면 다운로드버튼이 나올것이다
+## 7. Add new organization를 선택한후 자신이 원하는 App organization이름을 적고 오른쪽 밑에 파랑색 버튼을 클릭하면 organization이 만들어진다, 그다음으로 Add app을 클릭하면 Add new app작은 페이지가 나올것이다 App name을 자신이 원하는데로 영어로 적어준다 그다음으로는 OS를 Android로 변경 시켜주고 Platform은 Java/Kotlin으로 변경 시켜준다, 마지막으로 Add new app을 클릭해주면 생셩된다.
+## 8. Group Name은 영어로 만들어주면 되고 Allow public access를 ON으로 해준다(이걸으로 앱을 배포하면 모든 사람들이 다운 받을수 있다) 그리고 Create Group을 클릭해준다
+## 9. 중간에 파란색버튼으로 Distribute new release버튼이 보일것이다 그것을 클릭하면 배포하고 싶은 .APK파일을 열어준다(업로드 하는데 시간이 좀 걸린다) 업로드가 마치면 Next버튼이 활성화 되어있을것이다 그것을 클릭하면 다음으로 넘어가고 New release가 나오는데 그건 Next버튼을 다시 눌러 넘어가면된다
+## 10. 마지막으로 Distribute 파란색 버튼이 나오는데 그걸을 클릭하면 이제 앱을 배포할 준비가 끝이 났다.
+## 11. 오른쪽위에 보시면 다운로드 icon이 있을것이다 그걸을 클릭하면 핸드폰이면 바로 바로 다운로드 창으로 넘어 갈수도 있고 로그인 창이 나올수도 있다 로그인 창이 나오면 로그인을 하시면 된다, 그리고 데스크탑으로 들어갔다면 QR코드가 나올것이다 그것을 안드로이드 핸드폰으로 스캔하면 다운로드 창이 나올수도 있고 로그인 창이나올수도 있다 로그인 창이 나온다면 로그인을 하시면 된다 -이상무-
 
 <br>
 
