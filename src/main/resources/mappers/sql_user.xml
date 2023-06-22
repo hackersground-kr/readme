@@ -30,10 +30,10 @@
         <result property="income" column="income" />
         <result property="employee" column="employee" />
     </resultMap>
-    <select id="getByEmail" resultMap="result">
+    <select id="getByEmail" resultMap="user">
         SELECT * FROM user WHERE email = #{email};
     </select>
-    <insert id="register" parameterType="com.alt.readmeuserservice.domain.user.User" keyProperty="idx" useGeneratedKeys="true">
+    <insert id="register" parameterType="com.alt.readmeuserservice.domain.user.User" useGeneratedKeys="true" keyProperty="idx">
         INSERT INTO user(
             email
             , name
@@ -50,7 +50,7 @@
             , #{type}
         )
     </insert>
-    <insert id="registerStudent" parameterType="com.alt.readmeuserservice.domain.user.Student" keyProperty="idx">
+    <insert id="registerStudent" parameterType="com.alt.readmeuserservice.domain.user.Student">
         INSERT INTO student(
               idx
             , birth
@@ -63,7 +63,7 @@
             , #{grade}
         )
     </insert>
-    <insert id="registerSchool" parameterType="com.alt.readmeuserservice.domain.user.School" keyProperty="idx">
+    <insert id="registerSchool" parameterType="com.alt.readmeuserservice.domain.user.School">
         INSERT INTO school(
              idx
            , type
@@ -76,7 +76,7 @@
             , #{student}
         )
     </insert>
-    <insert id="registerEnterprise" parameterType="com.alt.readmeuserservice.domain.user.Enterprise" keyProperty="idx">
+    <insert id="registerEnterprise" parameterType="com.alt.readmeuserservice.domain.user.Enterprise">
         INSERT INTO enterprise(
               idx
             , income
