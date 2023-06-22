@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - hackathon-readme
+name: Build and deploy APK app to Azure Web App - hackathon-readme
 
 on:
   push:
@@ -54,4 +54,4 @@ jobs:
           app-name: 'hackathon-readme'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C7D64ED7420436D8933A24E7F320914 }}
-          package: *.apk
+          package: '*.apk'
