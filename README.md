@@ -28,10 +28,19 @@
 ### 사전 준비 사항
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위해 사전에 필요한 준비 사항들을 적어주세요.**
-> Android -> AndroidStdio에서 빌드한 .APK 앱 파일, app Center 계정,
-
+- Android : AndroidStdio에서 빌드한 .APK 앱 파일, app Center 계정,
+- Web : github계정, Azure계정
 ## 시작하기
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
-> Android ->
-> Backend ->
+- Android ->
+- Backend ->
+- Web
+ ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.
+ ## 2. 리소스 만들기를 선택합니다.
+ ## 3. `정적 웹앱`을 검색합니다.
+ ## 4. 정적 웹앱을 선택합니다. 
+ ## 5. 만들기를 클릭합니다.
+ ##
+
+
