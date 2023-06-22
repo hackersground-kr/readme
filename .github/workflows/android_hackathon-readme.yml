@@ -31,3 +31,4 @@ jobs:
           app_secret: ${{ secrets.APP_CENTER_APP_SECRET }}
           file: app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
           group: Collaborators
+          package: '*.apk'

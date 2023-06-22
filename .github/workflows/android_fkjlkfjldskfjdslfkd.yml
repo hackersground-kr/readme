@@ -50,4 +50,4 @@ jobs:
           app-name: ''
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_418ABB879F354E9D8DEF719559CCF082 }}
-          package: '*.apk'
+
