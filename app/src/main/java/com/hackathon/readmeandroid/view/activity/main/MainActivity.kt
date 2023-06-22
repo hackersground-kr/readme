@@ -1,4 +1,4 @@
-package com.hackathon.readmeandroid.view.activity.account
+package com.hackathon.readmeandroid.view.activity.main
 
 import MainFragment
 import androidx.appcompat.app.AppCompatActivity
