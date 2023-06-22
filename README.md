@@ -42,7 +42,6 @@
  ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.
  ## 2. App Services [웹 앱] 만들기를 만듭니다.
  ## 3. `정적 웹앱`을 생성합니다.
- ## 4. 총 2개의 서비스를 생성합니다.
 
  `기본`
   <br>
@@ -67,7 +66,23 @@
 
  ## 5. 검토후 생성합니다.
 
+ ## 6. API Management 서비스를 생성합니다
+
+  `기본`
+  <br>
+|설정|값|
+|:---|:---|
+|지역|(Asia Pacific)East Asia|
+|리소스 이름|readme-api-manager|
+|조직 이름|Alt|
+|관리자 이메일|본인 이메일|
+|사용량|99.95% SLA|
+
 <br>
+
+ ## 7. readme-api-manager > api > Create from Azure resource > App Service 정의
+ ## 8. browse를 누르고 이전에 만든 readme-user-service 선택 > API URL suffix 는 user로 맟추고 생성
+
 <br>
 
 - Web
