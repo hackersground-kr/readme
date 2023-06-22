@@ -46,7 +46,7 @@ export const useSignup = () => {
     async (e) => {
       e.preventDefault();
 
-      if (email && password && selectOption) {
+      if (email && password) {
         if (userType === "school") {
           try {
             // console.log(email, password, selectOption, selectedType, userNumber, URL);
