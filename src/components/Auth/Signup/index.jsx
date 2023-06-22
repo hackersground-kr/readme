@@ -6,7 +6,7 @@ import { useSignup } from "../../../hooks/useSignup";
 
 export const Signup = () => {
   const [selectedOption, setSelectedOption] = useState(null);
-  const { onSignUpChange, email, password, onSignUpSubmit } = useSignup(selectedOption);
+  const { onSignUpChange, email, password, onSignUpSubmit } = useSignup();
   const navigate = useNavigate();
 
   const handleOptionChange = (event) => {
