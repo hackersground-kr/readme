@@ -42,7 +42,7 @@ jobs:
         id: Readme
         uses: microsoft/appcenter-action@v3
         with:
-          app-name: ''
+          app-name: 'Readme'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_418ABB879F354E9D8DEF719559CCF082 }}
 
