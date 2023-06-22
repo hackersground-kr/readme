@@ -30,11 +30,11 @@ export const EditIntroduce = () => {
           </S.Overlap>
           <S.H1>학교 설명</S.H1>
           <S.Image alt="Image" src={pencil} />
-          <S.OverlapGroupWrapper>
+          {/* <S.OverlapGroupWrapper>
             <S.OverlapGroup>
               <S.TextWrapper2>수정</S.TextWrapper2>
             </S.OverlapGroup>
-          </S.OverlapGroupWrapper>
+          </S.OverlapGroupWrapper> */}
         </S.Group>
       </S.GroupWrapper>
     </S.Box>

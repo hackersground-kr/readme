@@ -4,7 +4,7 @@ import smile from "../../../assets/img/smile.png";
 import img from "../../../assets/img/dummy.png";
 import group from "../../../assets/svg/Group.svg";
 import location from "../../../assets/svg/Location.svg";
-import image from "../../../assets/svg/image.svg";
+// import image from "../../../assets/svg/image.svg";
 
 import * as S from "./style";
 
@@ -22,18 +22,18 @@ export const EditInformation = () => {
             <S.Div>학생수 : 40</S.Div>
             <S.Group2 alt="Group" src={group} />
             <S.P>위치 : 구지면 창리로 11길 93</S.P>
-            <S.OverlapGroupWrapper>
+            {/* <S.OverlapGroupWrapper>
               <S.OverlapGroup>
                 <S.TextWrapper2>사진 변경하기</S.TextWrapper2>
               </S.OverlapGroup>
-            </S.OverlapGroupWrapper>
-            <S.OverlapWrapper>
+            </S.OverlapGroupWrapper> */}
+            {/* <S.OverlapWrapper>
               <S.DivWrapper>
                 <S.TextWrapper3>수정</S.TextWrapper3>
               </S.DivWrapper>
-            </S.OverlapWrapper>
+            </S.OverlapWrapper> */}
             <S.IconLocation alt="Icon location" src={location} />
-            <S.IconImage alt="" src={image} />
+            {/* <S.IconImage alt="" src={image} /> */}
 
             <S.H1>학교 정보</S.H1>
             <S.Image alt="" src={smile} />

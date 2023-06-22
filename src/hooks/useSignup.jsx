@@ -14,7 +14,7 @@ export const useSignup = () => {
   const [userAdress, setUserAdress] = useState("");
 
   const School_URL = `https://readme-api-manager.azure-api.net/user/signup/school`;
-  const Company_URL = `https://readme-api-manager.azure-api.net/user/signup/company`;
+  const Company_URL = `https://readme-api-manager.azure-api.net/user/signup/enterprise`;
 
   const onSignUpChange = useCallback((e) => {
     if (e.target.name === "email") {
@@ -79,7 +79,7 @@ export const useSignup = () => {
               password: password,
               location: userAdress,
               income: 100000000,
-              employee: userNumber,
+              employee: Number(userNumber),
             });
             console.log(response);                        
             ToastSuccess("회원가입에 성공하였습니다.");
