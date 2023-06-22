@@ -31,9 +31,9 @@ export const Overlap = styled.div`
   border-radius: 35px;
   box-shadow: 3px 3px 10px 2px #00000040;
   height: 374px;
-  left: 200px;
+  left: 300px;
   position: absolute;
-  top: 300px;
+  top: 150px;
   width: 774px;
 `;
 
@@ -217,7 +217,7 @@ export const H1 = styled.h1`
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: -30px;
+  top: -40px;
 `;
 
 export const Image = styled.img`
@@ -225,6 +225,6 @@ export const Image = styled.img`
   left: 16px;
   object-fit: cover;
   position: absolute;
-  top: -30px;
+  top: -40px;
   width: 26px;
 `;

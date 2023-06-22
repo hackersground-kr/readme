@@ -6,7 +6,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-
 export const Form = styled.form`
   position: absolute;
   width: 600px;
@@ -49,7 +48,7 @@ export const FormInput = styled.input`
   width: 502px;
   height: 45px;
   left: 25px;
-  top: 420px;
+  top: 200px;
   margin-bottom: 20px;
 
   border: none;
@@ -69,7 +68,7 @@ export const FormInput2 = styled.input`
   width: 502px;
   height: 45px;
   left: 25px;
-  top: 520px;
+  top: 300px;
   margin-bottom: 20px;
 
   border: none;
@@ -152,7 +151,7 @@ export const FormRadio = styled.input`
   height: 24px;
 
   left: 200px;
-  top: 630px;
+  top: 400px;
 
   background: #ffffff;
   border: 1px solid #000000;
@@ -167,7 +166,7 @@ export const RadioText = styled.span`
   width: 50px;
   height: 24px;
   left: 225px;
-  top: 633px;
+  top: 403px;
 
   font-family: Pretendard;
   font-style: normal;
@@ -188,7 +187,7 @@ export const FormRadio2 = styled.input`
   width: 24px;
   height: 24px;
   left: 300px;
-  top: 630px;
+  top: 400px;
   background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -203,7 +202,7 @@ export const RadioText2 = styled.span`
   width: 50px;
   height: 24px;
   left: 325px;
-  top: 633px;
+  top: 403px;
 
   font-family: Pretendard;
   font-style: normal;
@@ -225,6 +224,166 @@ export const FormTypeInput = styled.input`
   height: 15px;
   left: 25px;
   top: 670px;
+  margin-bottom: 20px;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* #F2F2F2 */
+
+  background: #f2f2f2;
+  border-radius: 10px;
+
+  font-size: 25px;
+  padding: 20px;
+`;
+
+export const FormTypeInput2 = styled.input`
+  position: absolute;
+  width: 502px;
+  height: 15px;
+  left: 25px;
+  top: 600px;
+  margin-bottom: 20px;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* #F2F2F2 */
+
+  background: #f2f2f2;
+  border-radius: 10px;
+
+  font-size: 25px;
+  padding: 20px;
+`;
+
+export const FormRadioType = styled.input`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  left: 130px;
+  top: 500px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  cursor: pointer;
+`;
+
+export const FormRadioType2 = styled.input`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  left: 230px;
+  top: 500px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  cursor: pointer;
+`;
+
+export const FormRadioType3 = styled.input`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  left: 310px;
+  top: 500px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  cursor: pointer;
+`;
+
+export const FormRadioType4 = styled.input`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  left: 390px;
+  top: 500px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  cursor: pointer;
+`;
+
+export const RadioTextType = styled.span`
+  position: absolute;
+  width: 70px;
+  height: 24px;
+  left: 160px;
+  top: 503px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135.5%;
+`;
+
+export const RadioTextType2 = styled.span`
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  left: 260px;
+  top: 503px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135.5%;
+`;
+
+export const RadioTextType3 = styled.span`
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  left: 340px;
+  top: 503px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135.5%;
+`;
+
+export const RadioTextType4 = styled.span`
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  left: 410px;
+  top: 503px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135.5%;
+`;
+
+export const FormTypeInputNumber = styled.input`
+  position: absolute;
+  width: 502px;
+  height: 15px;
+  left: 25px;
+  top: 530px;
   margin-bottom: 20px;
 
   border: none;
