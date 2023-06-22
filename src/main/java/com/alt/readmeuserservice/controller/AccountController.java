@@ -33,7 +33,7 @@ public class AccountController {
                 .data(userService.signUpEnterprise(enterprise))
                 .build();
     }
-    @PostMapping("/signup/School")
+    @PostMapping("/signup/school")
     public ResponseEntity registerSchool(@RequestBody School school) {
         school.setType('A');
         return ResponseEntity.builder()
