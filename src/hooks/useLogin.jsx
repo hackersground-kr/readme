@@ -8,7 +8,7 @@ export const useLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const URL = `https://readme-api-manager.azure-api.net/login`;
+  const URL = `https://readme-api-manager.azure-api.net/user/login`;
 
   const onLoginChange = useCallback((e) => {
     if (e.target.name === "email") {
