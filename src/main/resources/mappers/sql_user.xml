@@ -11,6 +11,8 @@
         <result property="email" column="email" />
         <result property="password" column="password" />
         <result property="type" column="type" />
+        <result property="location" column="location" />
+        <result property="intro" column="intro" />
     </resultMap>
     <select id="getByEmail" resultMap="result">
         SELECT * FROM user WHERE email = #{email};
@@ -19,6 +21,7 @@
         INSERT INTO user(
             email
             , name
+            , location
             , password
             , type
         )
@@ -26,6 +29,7 @@
         (
             #{email}
             , #{name}
+            , #{location}
             , #{password}
             , #{type}
         )
