@@ -33,6 +33,7 @@
     <select id="getByEmail" resultMap="user">
         SELECT * FROM user WHERE email = #{email};
     </select>
+
     <insert id="register" parameterType="com.alt.readmeuserservice.domain.user.User" useGeneratedKeys="true" keyProperty="idx">
         INSERT INTO user(
             email
