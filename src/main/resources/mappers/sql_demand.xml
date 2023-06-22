@@ -1,0 +1,43 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.alt.readsearchservice.mapper.DemandMapper">
+
+    <resultMap id="demand" type="com.alt.readsearchservice.domain.Demand">
+        <result property="idx" column="idx" />
+        <result property="enterpriseIdx" column="enterprise_idx" />
+        <result property="lineIdx" column="line_idx" />
+    </resultMap>
+    <resultMap id="enterprise" type="com.alt.readsearchservice.domain.user.Enterprise">
+        <result property="idx" column="idx" />
+        <result property="name" column="name" />
+        <result property="image" column="image" />
+        <result property="email" column="email" />
+        <result property="password" column="password" />
+        <result property="type" column="type" />
+        <result property="location" column="location" />
+        <result property="intro" column="intro" />
+        <result property="income" column="income" />
+        <result property="employee" column="employee" />
+    </resultMap>
+
+    <insert id="register" parameterType="com.alt.readsearchservice.domain.Demand" useGeneratedKeys="true" keyProperty="idx">
+        INSERT INTO demand (
+            enterprise_idx
+            , line_idx
+        )
+        VALUE
+        (
+            #{enterpriseIdx}
+            , #{lineIdx}
+        )
+    </insert>
+    <select id="getByLine" resultMap="enterprise">
+        SELECT e.*, u.*
+        FROM demand d
+                 INNER JOIN enterprise e ON d.enterprise_idx = e.idx
+                 INNER JOIN user u ON d.idx = u.idx
+        WHERE d.line_idx = #{line};
+    </select>
+</mapper>

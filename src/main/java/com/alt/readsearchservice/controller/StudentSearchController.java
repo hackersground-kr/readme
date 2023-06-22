@@ -22,5 +22,12 @@ public class StudentSearchController {
                 .data(searchService.getStudentByName(name))
                 .build();
     }
+    @PostMapping("/suggestion/revert")
+    public ResponseEntity revertSuggestion(@RequestParam String email) {
+        searchService.updateSuggestion(searchService.getStudentByEmail(email).getIdx());
+        return ResponseEntity.builder()
+                .data("success")
+                .build();
+    }
 
 }

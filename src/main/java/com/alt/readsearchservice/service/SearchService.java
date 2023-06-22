@@ -1,5 +1,6 @@
 package com.alt.readsearchservice.service;
 
+import com.alt.readsearchservice.domain.Line;
 import com.alt.readsearchservice.domain.Purpose;
 import com.alt.readsearchservice.domain.user.Enterprise;
 import com.alt.readsearchservice.domain.user.School;
@@ -22,5 +23,7 @@ public interface SearchService {
     public List<Enterprise> getPurposeByStudent(String email);
     public List<Student> getPurposeByEnterprise(String email);
     public void purposeRegister(Purpose purpose);
+    public void demandRegister(String enterprise, String line);
+    public List<Enterprise> demandSearch(String line);
     public void updateSuggestion(Long idx);
 }

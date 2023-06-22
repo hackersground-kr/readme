@@ -1,14 +1,13 @@
 package com.alt.readsearchservice.service.impl;
 
+import com.alt.readsearchservice.domain.Demand;
+import com.alt.readsearchservice.domain.Line;
 import com.alt.readsearchservice.domain.Purpose;
 import com.alt.readsearchservice.domain.user.Enterprise;
 import com.alt.readsearchservice.domain.user.School;
 import com.alt.readsearchservice.domain.user.Student;
 import com.alt.readsearchservice.domain.user.User;
-import com.alt.readsearchservice.mapper.EnterpriseMapper;
-import com.alt.readsearchservice.mapper.PurposeMapper;
-import com.alt.readsearchservice.mapper.SchoolMapper;
-import com.alt.readsearchservice.mapper.StudentMapper;
+import com.alt.readsearchservice.mapper.*;
 import com.alt.readsearchservice.service.SearchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,6 +21,8 @@ public class SearchServiceImpl implements SearchService {
     private final SchoolMapper schoolMapper;
     private final EnterpriseMapper enterpriseMapper;
     private final PurposeMapper purposeMapper;
+    private final LineMapper lineMapper;
+    private final DemandMapper demandMapper;
     @Override
     public Student getStudentByEmail(String email) {
         Student student = studentMapper.getByEmail(email);
@@ -71,6 +72,20 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public void purposeRegister(Purpose purpose) {
         purposeMapper.register(purpose);
+    }
+    @Override
+    public void demandRegister(String enterprise, String line) {
+        demandMapper.register(Demand
+                .builder()
+                .EnterpriseIdx(enterpriseMapper.getByEmail(enterprise).getIdx())
+                .lineIdx(lineMapper.getByName(line).getIdx())
+                .build());
+    }
+    @Override
+    public List<Enterprise> demandSearch(String line) {
+        Line l = lineMapper.getByName(line);
+
+        return demandMapper.getByLine(l.getIdx());
     }
 
     @Override
