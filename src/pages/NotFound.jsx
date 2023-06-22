@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Toast from "../../lib/Alert/Toast";
+import Toast from "../lib/Toast";
 
 const NotFound = () => {
   const navigate = useNavigate();
