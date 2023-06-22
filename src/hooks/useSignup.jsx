@@ -92,11 +92,7 @@ export const useSignup = () => {
         ToastWarning("모든 항목을 입력해주세요");
       }
     },
-<<<<<<< HEAD
     [email, password, selectOption, navigate, selectedType, userNumber, userType, Company_URL, School_URL, userAdress],
-=======
-    [email, password, selectOption, URL, navigate, selectedType, userNumber, userType],
->>>>>>> web-jinsoo1004
   );
   return { onSignUpChange, email, password, onSignUpSubmit };
 };
