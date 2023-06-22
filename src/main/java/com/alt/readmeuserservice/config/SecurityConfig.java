@@ -2,7 +2,6 @@ package com.alt.readmeuserservice.config;
 
 import com.alt.readmeuserservice.CookieProvider;
 import com.alt.readmeuserservice.JwtTokenProvider;
-import com.alt.readmeuserservice.filter.JwtAuthenticationFilter;
 import com.alt.readmeuserservice.service.impl.RefreshTokenServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -37,14 +36,7 @@ public class SecurityConfig {
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and()
             .authorizeHttpRequests()
-            .anyRequest().permitAll()
-
-            .and().addFilterBefore(new JwtAuthenticationFilter(
-                authenticationManagerBuilder,
-                jwtTokenProvider,
-                refreshTokenServiceImpl,
-                cookieProvider)
-                , UsernamePasswordAuthenticationFilter.class);
+            .anyRequest().permitAll();
 
         return http.build();
     }
