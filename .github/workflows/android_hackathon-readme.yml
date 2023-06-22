@@ -1,6 +1,9 @@
 name: Build and Deploy to App Center
 
-on: Android2
+on:
+  push:
+    branches:
+      -Android2
 
 jobs:
   apk:
