@@ -1,5 +1,8 @@
 package com.hackathon.readmeandroid.model
 
-data class ItemCardMain(var image: Int,
-                        var major: String,
-                        )
+import androidx.annotation.DrawableRes
+
+data class ItemCardMain(
+    @DrawableRes var image: Int,
+    var major: String,
+)

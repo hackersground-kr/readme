@@ -2,8 +2,9 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="155dp"
-    android:layout_height="105dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="110dp"
     android:layout_margin="15dp"
     android:padding="10dp"
     app:cardElevation="10dp"
@@ -13,7 +14,7 @@
         android:id="@+id/main_card_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/image002">
+        tools:background="@drawable/develop_image">
 
         <TextView
             android:id="@+id/major"

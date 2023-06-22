@@ -6,46 +6,50 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.hackathon.readmeandroid.R
 import com.hackathon.readmeandroid.controller.MainRecyclerView
 import com.hackathon.readmeandroid.databinding.FragmentMainBinding
 import com.hackathon.readmeandroid.model.ItemCardMain
 
 class MainFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
-
     ): View? {
-        //
         val binding = FragmentMainBinding.inflate(inflater, container, false)
 
-        val recylcerView by lazy {
+        val recyclerView by lazy {
             binding.majorListScroll
         }
 
-        var items: ArrayList<ItemCardMain> = ArrayList()
+        val titles = listOf(
+            "IT/정보통신", "건설", "교육", "금융/은행", "문화/예술/디자인",
+            "미디어/광고", "서비스", "의료/제약", "제조/생산/화학", "판매/유통"
+        )
+        val items: ArrayList<ItemCardMain> = ArrayList()
+
         for (i in 0 until 10) {
-            items.add(ItemCardMain(
-                R.drawable.image002,
-                "개발 $i")
-            )
+            val title = titles[i] // 각 카드마다 다른 title 값 할당
+            val imageResId = when (i % 10) {
+                0 -> R.drawable.develop_image
+                1 -> R.drawable.develop_image
+                2 -> R.drawable.struct_image
+                3 -> R.drawable.struct_image
+                4 -> R.drawable.struct_image
+                5 -> R.drawable.struct_image
+                6 -> R.drawable.struct_image
+                7 -> R.drawable.struct_image
+                8 -> R.drawable.struct_image
+                9 -> R.drawable.struct_image
+                else -> R.drawable.develop_image
+            }
+            items.add(ItemCardMain(imageResId, title))
         }
 
-        var adapter = MainRecyclerView(items)
-        recylcerView.adapter = adapter
-        recylcerView.layoutManager = GridLayoutManager(
-            context, 2
-        )
+        val adapter = MainRecyclerView(items)
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = GridLayoutManager(context, 2)
 
-        // 프래그먼트 레이아웃 뷰 반환
         return binding.root
     }
-
-
 }

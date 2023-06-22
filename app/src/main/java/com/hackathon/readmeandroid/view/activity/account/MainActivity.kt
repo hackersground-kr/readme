@@ -15,6 +15,9 @@ import com.hackathon.readmeandroid.model.ItemCardMain
 import com.hackathon.readmeandroid.view.fragment.main.FavoritesFragment
 import com.hackathon.readmeandroid.view.fragment.main.MainFragment
 import com.hackathon.readmeandroid.view.fragment.main.MyPageFragment
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +34,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        AppCenter.start(
+            application, "dac78000-80e9-4658-9707-1db983d47a8c",
+            Analytics::class.java, Crashes::class.java
+        )
+
 
         vp.apply {
             adapter = ViewPagerAdapter(this@MainActivity)

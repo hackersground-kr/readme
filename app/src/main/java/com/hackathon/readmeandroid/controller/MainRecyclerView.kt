@@ -22,7 +22,7 @@ class MainRecyclerView (items: ArrayList<ItemCardMain>) : RecyclerView.Adapter<M
 
         fun bind(position: Int) {
 //            tvImage.setImageResource(items[position].image)
-//            tvImage.setBackgroundResource(items[position].image)
+            tvImage.setBackgroundResource(items[position].image)
             tvName.text = items[position].major
 
         }
