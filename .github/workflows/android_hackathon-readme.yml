@@ -1,3 +1,4 @@
+
 name: Build and Upload APK
 
 on:
@@ -6,7 +7,7 @@ on:
       - Android
 
 jobs:
-  build:
+  build-and-upload:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,17 +19,13 @@ jobs:
         with:
           java-version: 17
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run: ./gradlew assembleDebug
 
       - name: Upload APK to App Center
         uses: microsoft/appcenter-action@v2
         with:
           app_name: Readme
-          app_secret: ${{ secrets.APP_CENTER_APP_SECRET }}
+          app_secret: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_418ABB879F354E9D8DEF719559CCF082 }}
           file: app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
           group: Collaborators
-          package: '*.apk'
