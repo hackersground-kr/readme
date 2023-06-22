@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class School extends User {
-    private Character school_type;
+    private Character schoolType;
     private Integer student;
     private Integer satisfaction;
 }
