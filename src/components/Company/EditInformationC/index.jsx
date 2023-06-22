@@ -19,7 +19,7 @@ export const EditInformationC = () => {
             <S.Line className="line" alt="Line" />
             <S.Line2 alt="Line" />
             <S.Line className="line-2" alt="Line" />
-            <S.Div>학생수 : 40</S.Div>
+            <S.Div>인원수 : 40</S.Div>
             <S.Group2 alt="Group" src={group} />
             <S.P>위치 : 구지면 창리로 11길 93</S.P>
             {/* <S.OverlapGroupWrapper>
@@ -35,7 +35,7 @@ export const EditInformationC = () => {
             <S.IconLocation alt="Icon location" src={location} />
             {/* <S.IconImage alt="" src={image} /> */}
 
-            <S.H1>학교 정보</S.H1>
+            <S.H1>회사 정보</S.H1>
             <S.Image alt="" src={smile} />
           </S.Overlap>
         </S.Group>

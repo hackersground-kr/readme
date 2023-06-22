@@ -15,20 +15,20 @@ export const EditIntroduceC = () => {
             </S.RectangleWrapper>
             <S.Div />
             <S.TextWrapper>
-              대구 구지면에 위치한 마이스터고등학교입니다
+              대구 구지면에 위치한 이찬혁컴퍼니입니다
               <br />
-              대구 구지면에 위치한 마이스터고등학교입니다
+              대구 구지면에 위치한 이찬혁컴퍼니입니다
               <br />
-              대구 구지면에 위치한 마이스터고등학교입니다
+              대구 구지면에 위치한 이찬혁컴퍼니입니다
               <br />
-              대구 구지면에 위치한 마이스터고등학교입니다
+              대구 구지면에 위치한 이찬혁컴퍼니입니다
               <br />
-              대구 구지면에 위치한 마이스터고등학교입니다
+              대구 구지면에 위치한 이찬혁컴퍼니입니다
               <br />
-              대구 구지면에 위치한 마이스터고등학교입니다
+              대구 구지면에 위치한 이찬혁컴퍼니입니다
             </S.TextWrapper>
           </S.Overlap>
-          <S.H1>학교 설명</S.H1>
+          <S.H1>회사 설명</S.H1>
           <S.Image alt="Image" src={pencil} />
           {/* <S.OverlapGroupWrapper>
             <S.OverlapGroup>
