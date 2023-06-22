@@ -4,6 +4,7 @@ import com.alt.readsearchservice.domain.user.Enterprise;
 import com.alt.readsearchservice.domain.user.School;
 import com.alt.readsearchservice.domain.user.Student;
 import com.alt.readsearchservice.mapper.EnterpriseMapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -16,4 +17,5 @@ public interface SearchService {
 
     public Enterprise getEnterpriseByEmail(String email);
     public List<Enterprise> getEnterpriseByName(String name);
+    public void updateSuggestion(Long idx);
 }

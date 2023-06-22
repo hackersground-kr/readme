@@ -14,4 +14,7 @@ public interface StudentMapper {
     public List<Student> getByName(
             @Param("name") String name
     );
+    public void updateSuggestion(
+            @Param("idx") Long idx
+    );
 }

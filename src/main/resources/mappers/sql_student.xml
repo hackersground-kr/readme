@@ -26,6 +26,7 @@
         <result property="birth" column="birth" />
         <result property="grade" column="grade" />
         <result property="belong" column="belong" />
+        <result property="suggestion" column="suggestion" />
     </resultMap>
 
     <select id="getByEmail" resultMap="student">
@@ -43,4 +44,10 @@
 
         WHERE name LIKE CONCAT('%', #{name}, '%')
     </select>
+    <update id="updateSuggestion">
+        UPDATE student
+        SET suggestion = !suggestion
+
+        WHERE idx = #{idx}
+    </update>
 </mapper>

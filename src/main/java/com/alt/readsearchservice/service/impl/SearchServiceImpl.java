@@ -18,11 +18,13 @@ public class SearchServiceImpl implements SearchService {
     private final StudentMapper studentMapper;
     private final SchoolMapper schoolMapper;
     private final EnterpriseMapper enterpriseMapper;
+    @Override
     public Student getStudentByEmail(String email) {
         Student student = studentMapper.getByEmail(email);
         student.setBelongName(schoolMapper.get(student.getBelong()).getName());
         return student;
     }
+    @Override
     public List<Student> getStudentByName(String name) {
         List<Student> students = studentMapper.getByName(name);
         for (Student student : students) {
@@ -30,13 +32,14 @@ public class SearchServiceImpl implements SearchService {
         }
         return studentMapper.getByName(name);
     }
-
+    @Override
     public School getSchoolByEmail(String email) {
         School school = schoolMapper.getByEmail(email);
         school.setStudent(schoolMapper.getStudentCount(school.getIdx()));
 
         return school;
     }
+    @Override
     public List<School> getSchoolByName(String name) {
         return schoolMapper.getByName(name);
     }
@@ -49,5 +52,9 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public List<Enterprise> getEnterpriseByName(String name) {
         return enterpriseMapper.getByName(name);
+    }
+    @Override
+    public void updateSuggestion(Long idx) {
+        studentMapper.updateSuggestion(idx);
     }
 }
