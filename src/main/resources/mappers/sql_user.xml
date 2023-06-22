@@ -68,12 +68,14 @@
              idx
            , type
            , student
+           , satisfaction
         )
         VALUE
         (
             #{idx}
             , #{school_type}
             , #{student}
+            , 0
         )
     </insert>
     <insert id="registerEnterprise" parameterType="com.alt.readmeuserservice.domain.user.Enterprise">
