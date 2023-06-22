@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReadmeAndroid.iml" filepath="$PROJECT_DIR$/.idea/modules/ReadmeAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ReadmeAndroid.iml" filepath="$PROJECT_DIR$/.idea/ReadmeAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ReadmeAndroid.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ReadmeAndroid.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ReadmeAndroid.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ReadmeAndroid.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ReadmeAndroid.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ReadmeAndroid.app.main.iml" />

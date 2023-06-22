@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.microsoft.appcenter:appcenter-analytics:4.4.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2f731ba6512e0a9d585131633d269fd1/transformed/appcenter-analytics-4.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2f731ba6512e0a9d585131633d269fd1/transformed/appcenter-analytics-4.4.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2b257b6744a7b384507963c8df43b8ce/transformed/appcenter-analytics-4.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b257b6744a7b384507963c8df43b8ce/transformed/appcenter-analytics-4.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.appcenter/appcenter-analytics/4.4.5/a5b129b66834c6f05b43de7f3daf93e4baaf2c72/appcenter-analytics-4.4.5-javadoc.jar!/" />

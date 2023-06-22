@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.microsoft.appcenter:appcenter:4.4.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2c8953d3c4c592132645af8540dd3280/transformed/appcenter-4.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c8953d3c4c592132645af8540dd3280/transformed/appcenter-4.4.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b5c058e92eac592af749ab02521edcab/transformed/appcenter-4.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b5c058e92eac592af749ab02521edcab/transformed/appcenter-4.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.appcenter/appcenter/4.4.5/67e056f5770cab8b21467fb4d550daf3b3350146/appcenter-4.4.5-javadoc.jar!/" />
