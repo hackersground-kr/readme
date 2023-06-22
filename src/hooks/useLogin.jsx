@@ -24,11 +24,16 @@ export const useLogin = () => {
 
       if (email && password) {
         try {
-        //   console.log(email, password, URL);
-          const response = await axios.post(URL, {
-            email: email,
-            password: password,
-          });
+          //   console.log(email, password, URL);
+          const response = await axios.post(
+            URL,
+            {
+              email: email,
+              password: password,
+            },
+            { Credentials: true },
+          );
+
           console.log(response);
           ToastSuccess("회원가입에 성공하였습니다.");
           navigate("/login");
