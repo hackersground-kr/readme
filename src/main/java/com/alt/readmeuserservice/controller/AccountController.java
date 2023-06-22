@@ -19,6 +19,7 @@ public class AccountController {
     private final UserService userService;
     @PostMapping("/signup/student")
     public ResponseEntity registerStudent(@RequestBody Student student) {
+        student.setType('S');
         return ResponseEntity.builder()
                 .status(200)
                 .data(userService.signUpStudent(student))
@@ -26,6 +27,7 @@ public class AccountController {
     }
     @PostMapping("/signup/enterprise")
     public ResponseEntity registerEnterprise(@RequestBody Enterprise enterprise) {
+        enterprise.setType('E');
         return ResponseEntity.builder()
                 .status(200)
                 .data(userService.signUpEnterprise(enterprise))
@@ -33,6 +35,7 @@ public class AccountController {
     }
     @PostMapping("/signup/School")
     public ResponseEntity registerSchool(@RequestBody School school) {
+        school.setType('A');
         return ResponseEntity.builder()
                 .status(200)
                 .data(userService.signUpSchool(school))
