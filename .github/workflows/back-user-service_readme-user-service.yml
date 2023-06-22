@@ -53,4 +53,4 @@ jobs:
           app-name: 'readme-user-service'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BE03614067B54A0A9B745FA18D406551 }}
-          package: '*.jar'
+          package: 'readme-user-service-0.0.1-SNAPSHOT.jar'
