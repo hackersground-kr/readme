@@ -23,7 +23,9 @@ class MainFragment : Fragment() {
             binding.majorListScroll
         }
 
-
+        binding.majorListScroll.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_favoritesFragment)
+        }
 
 
         val titles = listOf(
