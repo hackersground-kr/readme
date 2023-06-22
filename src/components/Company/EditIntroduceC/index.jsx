@@ -4,7 +4,7 @@ import pencil from "../../../assets/img/pencil.png";
 
 import * as S from "./style";
 
-export const EditIntroduce = () => {
+export const EditIntroduceC = () => {
   return (
     <S.Box>
       <S.GroupWrapper>

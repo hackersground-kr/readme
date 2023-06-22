@@ -65,7 +65,7 @@ export const UserSchool = styled.span`
 export const UserEmail = styled.span`
   position: relative;
   top: 60px;
-  left: -310px;
+  left: -60px;
 
   color: #000;
   font-size: 20px;

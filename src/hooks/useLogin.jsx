@@ -30,7 +30,7 @@ export const useLogin = () => {
             password: password,
           });
 
-          console.log(response);
+          // console.log(response.data);
           const { access, refresh } = response.data.data;
           localStorage.setItem("accessToken", access);
           document.cookie = `refreshToken=${refresh}`;

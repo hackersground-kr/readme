@@ -11,8 +11,8 @@ export const SchoolSideBar = () => {
     <S.SidebarContainer>
       <S.Logo onClick={() => navigate("/")}>ReadMe</S.Logo>
       <S.MenuItems>
-        <S.MenuItem onClick={() => navigate("/list")}>기업목록</S.MenuItem>
-        <S.MenuItem onClick={() => navigate("/recommend")}>학생추천</S.MenuItem>
+        <S.MenuItem onClick={() => navigate("/list")}>학교목록</S.MenuItem>
+        <S.MenuItem onClick={() => navigate("/recommend")}>관심등록</S.MenuItem>
       </S.MenuItems>
       <S.BottomMenu onClick={onLogout}>로그아웃</S.BottomMenu>
     </S.SidebarContainer>

@@ -8,13 +8,13 @@ import location from "../../../assets/svg/Location.svg";
 
 import * as S from "./style";
 
-export const EditInformation = () => {
+export const EditInformationC = () => {
   return (
     <S.Box>
       <S.GroupWrapper>
         <S.Group>
           <S.Overlap>
-            <S.TextWrapper>대구소프트웨어마이스터고등학교</S.TextWrapper>
+            <S.TextWrapper>찬혁이회사</S.TextWrapper>
             <S.Element alt="Element" src={img} />
             <S.Line className="line" alt="Line" />
             <S.Line2 alt="Line" />
