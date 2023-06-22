@@ -28,7 +28,7 @@
 ### 사전 준비 사항
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위해 사전에 필요한 준비 사항들을 적어주세요.**
-- Android : AndroidStdio에서 빌드한 .APK 앱 파일, app Center 계정,
+- Android : 노트북, 안드로이드 스튜디오, app Center 계정, 와이파이, Java 17버전, Compile Sdk Version API 33: Android 13.0,
 - Web : github계정, Azure계정
 ## 시작하기
 
