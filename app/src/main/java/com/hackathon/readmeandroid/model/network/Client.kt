@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object Client {
 
-    private const val BASE_URL = "http://0.0.0.0:8080"
+    private const val BASE_URL = "https://readme-api-manager.azure-api.net/"
 
     private val loggingInterceptor = LoggingInterceptor()
     private val client: OkHttpClient = OkHttpClient.Builder()
@@ -19,5 +19,4 @@ object Client {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     val api: API = retrofit.create(API::class.java)
-
 }

@@ -1,12 +1,12 @@
 package com.hackathon.readmeandroid.view.activity.account
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.hackathon.readmeandroid.R
 import com.hackathon.readmeandroid.databinding.ActivityAccountBinding
+import com.hackathon.readmeandroid.view.activity.main.MainActivity
 import com.hackathon.readmeandroid.view.fragment.account.LoginFragment
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
@@ -45,10 +45,6 @@ class AccountActivity : AppCompatActivity() {
 
         val loginFragment = LoginFragment()
         navigateToFragment(loginFragment)
-    }
-
-    fun nextActivivty(mainIntent: Intent){
-        nextActivivty(mainIntent)
     }
 
     private fun navigateToFragment(fragment: Fragment) {
