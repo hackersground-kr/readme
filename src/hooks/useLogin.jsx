@@ -35,7 +35,7 @@ export const useLogin = () => {
           localStorage.setItem("accessToken", access);
           document.cookie = `refreshToken=${refresh}`;
           ToastSuccess("로그인에 성공하였습니다.");
-          navigate("/login");
+          navigate("/");
         } catch (error) {
           ToastError("로그인에 실패했습니다.\n관리자에게 문의해주세요");
         }
