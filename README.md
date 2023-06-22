@@ -98,6 +98,7 @@
 |Azure Functions API 및 스테이징 환경을 위한 영역|East Asia선택|
 
 <img width="763" alt="스크린샷 2023-06-22 오후 6 54 34" src="https://github.com/hackersground-kr/readme/assets/89149734/370cab71-4709-4c38-8342-4cbbceec420c">
+
 <br>
 
 |설정|값|
@@ -108,6 +109,7 @@
 |분기|Web 선택|
 
 <img width="742" alt="스크린샷 2023-06-22 오후 6 58 22" src="https://github.com/hackersground-kr/readme/assets/89149734/0430b452-80e8-4bdb-b641-a36085859606">
+
 <br>
 
 |설정|값|
