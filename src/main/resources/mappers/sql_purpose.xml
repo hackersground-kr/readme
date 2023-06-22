@@ -1,0 +1,57 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.alt.readsearchservice.mapper.PurposeMapper">
+
+    <resultMap id="user" type="com.alt.readsearchservice.domain.Purpose">
+        <result property="idx" column="idx" />
+        <result property="studentIdx" column="student_idx" />
+        <result property="enterpriseIdx" column="enterprise_idx" />
+    </resultMap>
+    <resultMap id="enterprise" type="com.alt.readsearchservice.domain.user.Enterprise">
+        <result property="idx" column="idx" />
+        <result property="name" column="name" />
+        <result property="image" column="image" />
+        <result property="email" column="email" />
+        <result property="password" column="password" />
+        <result property="type" column="type" />
+        <result property="location" column="location" />
+        <result property="intro" column="intro" />
+        <result property="income" column="income" />
+        <result property="employee" column="employee" />
+    </resultMap>
+    <resultMap id="student" type="com.alt.readsearchservice.domain.user.Student">
+        <result property="idx" column="idx" />
+        <result property="name" column="name" />
+        <result property="image" column="image" />
+        <result property="email" column="email" />
+        <result property="password" column="password" />
+        <result property="type" column="type" />
+        <result property="location" column="location" />
+        <result property="intro" column="intro" />
+        <result property="birth" column="birth" />
+        <result property="grade" column="grade" />
+        <result property="belong" column="belong" />
+        <result property="suggestion" column="suggestion" />
+    </resultMap>
+
+    <select id="getByStudentIdx" resultMap="enterprise">
+        SELECT * FROM purpose p
+        INNER JOIN enterprise e
+        ON p.enterprise_idx = e.idx
+        INNER JOIN user u
+        ON p.enterprise_idx = u.idx
+
+        WHERE p.student_idx = #{idx}
+    </select>
+    <select id="getByEnterpriseIdx" resultMap="student">
+        SELECT * FROM purpose p
+        INNER JOIN student s
+        ON p.student_idx = s.idx
+        INNER JOIN user u
+        ON p.student_idx = u.idx
+
+        WHERE p.enterprise_idx = #{idx}
+    </select>
+</mapper>

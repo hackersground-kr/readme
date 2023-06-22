@@ -3,7 +3,9 @@ package com.alt.readsearchservice.service.impl;
 import com.alt.readsearchservice.domain.user.Enterprise;
 import com.alt.readsearchservice.domain.user.School;
 import com.alt.readsearchservice.domain.user.Student;
+import com.alt.readsearchservice.domain.user.User;
 import com.alt.readsearchservice.mapper.EnterpriseMapper;
+import com.alt.readsearchservice.mapper.PurposeMapper;
 import com.alt.readsearchservice.mapper.SchoolMapper;
 import com.alt.readsearchservice.mapper.StudentMapper;
 import com.alt.readsearchservice.service.SearchService;
@@ -18,6 +20,7 @@ public class SearchServiceImpl implements SearchService {
     private final StudentMapper studentMapper;
     private final SchoolMapper schoolMapper;
     private final EnterpriseMapper enterpriseMapper;
+    private final PurposeMapper purposeMapper;
     @Override
     public Student getStudentByEmail(String email) {
         Student student = studentMapper.getByEmail(email);
@@ -53,6 +56,17 @@ public class SearchServiceImpl implements SearchService {
     public List<Enterprise> getEnterpriseByName(String name) {
         return enterpriseMapper.getByName(name);
     }
+
+    @Override
+    public List<Enterprise> getPurposeByStudent(String email) {
+        return purposeMapper.getByStudentIdx(studentMapper.getByEmail(email).getIdx());
+    }
+
+    @Override
+    public List<Student> getPurposeByEnterprise(String email) {
+        return purposeMapper.getByEnterpriseIdx(enterpriseMapper.getByEmail(email).getIdx());
+    }
+
     @Override
     public void updateSuggestion(Long idx) {
         studentMapper.updateSuggestion(idx);
