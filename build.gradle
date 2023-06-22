@@ -41,7 +41,7 @@ dependencies {
 	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
 	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
 
-	implementation 'com.azure.spring:spring-cloud-azure-starter-jdbc-mysql'
+	testImplementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	runtimeOnly 'mysql:mysql-connector-j'
 
 	implementation 'com.azure.spring:spring-cloud-azure-starter-storage-blob'
