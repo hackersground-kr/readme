@@ -32,7 +32,7 @@
         INNER JOIN school s
         ON u.idx = s.idx
 
-        WHERE idx = #{idx}
+        WHERE u.idx = #{idx}
     </select>
     <select id="getByEmail" resultMap="school">
         SELECT * FROM user u
