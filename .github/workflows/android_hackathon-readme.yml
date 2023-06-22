@@ -1,13 +1,48 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy APK app to Azure Web App - hackathon-readme
+#name: Build and deploy APK app to Azure Web App - hackathon-readme
+#
+#on:
+#  push:
+#    branches:
+#      - Android
+#  workflow_dispatch:
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v2
+#
+#      - name: Set up JDK 11
+#        uses: actions/setup-java@v2
+#        with:
+#          java-version: 11
+#
+#      - name: Grant execute permission for gradlew
+#        run: chmod +x gradlew
+#
+#      - name: Build APK
+#        run: ./gradlew assembleDebug
+#
+#      - name: Upload APK to App Center
+#        uses: microsoft/appcenter-build@v3
+#        with:
+#          app_secret: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C7D64ED7420436D8933A24E7F320914 }}
+#          app_slug: Readme
+#          file: app/build/outputs/apk/androidTest/appCenter/debug/app-ㅇ-debug.apk
+#          group: Collaborators
+
+
+name: Build and Deploy to App Center
 
 on:
   push:
     branches:
-      - Android
-  workflow_dispatch:
+      - android
 
 jobs:
   build:
@@ -17,28 +52,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up JDK 11
+      - name: Set up JDK 17
         uses: actions/setup-java@v2
         with:
-          java-version: 11
+          java-version: 17
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Build APK
+      - name: Build with Gradle
         run: ./gradlew assembleDebug
 
+      - name: Display APK file
+        run: ls app/build/outputs/apk/debug
+
+      - name: Upload APK as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-debug
+          path: app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
+
       - name: Upload APK to App Center
-        uses: microsoft/appcenter-build@v3
+        uses: microsoft/appcenter-upload@v2
         with:
           app_secret: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C7D64ED7420436D8933A24E7F320914 }}
-          app_slug: Readme
-          file: app/build/outputs/apk/androidTest/appCenter/debug/app-debug.apk
+          owner_name: readme
+          app_name: Readme
+          file: app-appCenter-debug.apk
           group: Collaborators
-
-
-
-
-
-          #
-          #
