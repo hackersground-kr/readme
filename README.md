@@ -34,15 +34,16 @@
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
 - Android
-## 1. Github에서 안드로이드 코드를 클론 받는다.
-## 2. 클론 받은 안드로이드 코드를 안드로이드 스튜디오에서 실행 시킨다
-## 3. 안드로이드 스튜디오 Build Bundle(s) -> Build APK(s)를 클릭한다
-## 4. 안드로이드 스튜디오 오른쪽 밑에 Build APK(s) 창이 나온것을 확인 한후 locate를 클릭한다 그리고 나오는 .APK파일 위치를 외운다
+## 1. Github에서 Readme 레토지포리에 있는 Android2 브런치 코드를 클론받는다.
+## 2. 안드로이드 스튜디오를 실행 시킨뒤 상단에 있는 Open버튼을 클릭한뒤 클론받은 안드로이드 코드를 Open한다
+## 3. 안드로이드 스튜디오 상단라인에 있는 Build Bundle(s)(클릭) -> Build APK(s)를 클릭한다.
+## 4. 안드로이드 스튜디오 오른쪽 밑에 Build APK(s) 창이 나온것을 확인 한후 locate를 클릭한다 그리고 나오는 .APK파일 위치를 기억한다
 ## 5. https://appcenter.ms/apps 사이트에 들어가 SIGN IN을 클릭하여 로그인을 한다 필요할 경우 회원가입을 한다
 ## 6. 로그인이 완료 되었을 경우 오른쪽 위에 있는 Add new 파란색 버튼을 클릭한다.
-## 7. Add new app를 선택한후 자신이 원하는 App name을 적고 OS를 Android로 선택한다, Platform는 Java / Kotlin을 선택한다 그런다음 Add new app을 클릭하여 app을 만든다 오른쪽 Distribute을 선택한뒤 New release를 클릭한다 그런다음 외웠던 APK파일을 찾아 선택을 한뒤 Next버튼을 클릭한다
+## 7. Add new app를 선택한후 자신이 원하는 App name을 적고 OS를 Android로 선택한다, Platform는 Java / Kotlin을 선택한다 그런다음 Add new app을 클릭하여 app을 만든다 왼쪽 Distribute을 선택한뒤 New release를 클릭한다 그런다음 기억하였던 APK파일을 찾아 선택을 한뒤
+로딩이 완료될때까지 기다린뒤 Next버튼이 활성화 되었다면 Next버튼을 클릭한다
 ## 8. 필요할 경우 Notes를 작성하고 아니면 Next를 클릭한다 그다음으로 Collaborators를 클릭한뒤 Next버튼을 클릭한다, 그리고 마지막으로 Distribute 버튼을 클릭하고 성공적으로 저장을 한것을 확인한다.
-## 9. 그다음 다운을 원하는 앱을 선택한뒤 오른쪽위에 부분을 보면 Download를 클릭한다 그러면 엡이 다운 받아질것이다.
+## 9. 그다음 다운을 원하는 앱을 선택한뒤 오른쪽위에 부분을 보면 Download_icon를 클릭한다 그러면 핸드폰일경우 다운이 받아질것이고 데스크탑이라면 QR코드가 나올것이다 QR코드가 나왔을 경우 핸드폰으로 스캔하면 다운로드버튼이 나올것이다
 
 <br>
 
