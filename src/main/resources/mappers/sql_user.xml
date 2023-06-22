@@ -21,7 +21,7 @@
     </resultMap>
     <resultMap id="school" type="com.alt.readmeuserservice.domain.user.School">
         <result property="idx" column="idx" />
-        <result property="type" column="type" />
+        <result property="school_type" column="type" />
         <result property="student" column="student" />
         <result property="satisfaction" column="satisfaction" />
     </resultMap>
@@ -73,7 +73,7 @@
         VALUE
         (
             #{idx}
-            , #{type}
+            , #{school_type}
             , #{student}
             , #{satisfaction}
         )
