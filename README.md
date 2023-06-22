@@ -39,14 +39,17 @@
 $ git clone https://github.com/hackersground-kr/readme.git
 $ git checkout Android2
 ```
-## 2. 안드로이드 스튜디오를 실행 시킨뒤 상단에 있는 Open버튼을 클릭한뒤 클론받은 안드로이드 코드를 Open한다
+## 2. 안드로이드 스튜디오를 실행 시킨뒤 상단에 있는 Open버튼을 클릭한뒤 클론받은 안드로이드 코드를 Open한다(안드로이드 빌드를 한번도 하지 않은 노트북이나 텀퓨터이면 빌드하는데 오래 걸릴것이다)
 <img width="307" alt="스크린샷 2023-06-22 오후 9 01 20" src="https://github.com/hackersground-kr/readme/assets/89149734/89345405-7f8a-4d63-b532-45cdd3456dfe">
 
-## 3. 안드로이드 스튜디오 상단라인에 있는 Build Bundle(s)(클릭) -> Build APK(s)를 클릭한다.
-<img width="436" alt="스크린샷 2023-06-22 오후 9 06 56" src="https://github.com/hackersground-kr/readme/assets/89149734/b5f60beb-c348-41f2-be23-be84ad03e6af">
+## 3. 빌드가 다 받아져 왼쪽 상단에 Project가 Android로 변한다면 상단바에 Build(클릭) -> Build 
+Bundle(s) / APK(s) -> Build APK(s)(클릭)
+<img width="479" alt="Screenshot 2023-06-23 at 6 47 50 AM" src="https://github.com/hackersground-kr/readme/assets/101560702/5ee7656a-a6cf-4947-8286-1c3b7b140aa5">
 
-`만약 오류가 발생한다면 버전을 체크해보자.` : `settings > Updates > CheckForUpdates`<img width="983" alt="스크린샷 2023-06-22 오후 9 14 22" src="https://github.com/hackersground-kr/readme/assets/89149734/fce88eda-87b9-4184-8f7e-ca2f987131a0"><img width="238" alt="스크린샷 2023-06-22 오후 9 16 19" src="https://github.com/hackersground-kr/readme/assets/89149734/db83b931-0d5b-4923-89ba-ba5e70d00bb8">
+<img width="206" alt="Screenshot 2023-06-23 at 6 44 27 AM" src="https://github.com/hackersground-kr/readme/assets/101560702/45660d9e-db92-4d72-9a70-0e2bb6ca4c64"><img width="223" alt="Screenshot 2023-06-23 at 6 46 55 AM" src="https://github.com/hackersground-kr/readme/assets/101560702/b579acfb-a7e2-410a-8366-f09c3fa8261a">
 
+`만약 오류가 발생한다면 버전을 체크해보자.` : `settings > Updates > CheckForUpdates`<img width="983" alt="스크린샷 2023-06-22 오후 9 14 22" src="https://github.com/hackersground-kr/readme/assets/89149734/fce88eda-87b9-4184-8f7e-ca2f987131a0">
+### 버전 Java 17, Android 13(API33), 
 
 ## 4. 안드로이드 스튜디오 오른쪽 밑에 Build APK(s) 창이 나온것을 확인 한후 locate를 클릭한다 그리고 나오는 .APK파일 위치를 기억한다
 ## 5. https://appcenter.ms/apps 사이트에 들어가 SIGN IN을 클릭하여 로그인을 한다 필요할 경우 회원가입을 한다
@@ -55,7 +58,7 @@ $ git checkout Android2
 ## 8. Group Name은 영어로 만들어주면 되고 Allow public access를 ON으로 해준다(이걸으로 앱을 배포하면 모든 사람들이 다운 받을수 있다) 그리고 Create Group을 클릭해준다
 ## 9. 중간에 파란색버튼으로 Distribute new release버튼이 보일것이다 그것을 클릭하면 배포하고 싶은 .APK파일을 열어준다(업로드 하는데 시간이 좀 걸린다) 업로드가 마치면 Next버튼이 활성화 되어있을것이다 그것을 클릭하면 다음으로 넘어가고 New release가 나오는데 그건 Next버튼을 다시 눌러 넘어가면된다
 ## 10. 마지막으로 Distribute 파란색 버튼이 나오는데 그걸을 클릭하면 이제 앱을 배포할 준비가 끝이 났다.
-## 11. 오른쪽위에 보시면 다운로드 icon이 있을것이다 그걸을 클릭하면 핸드폰이면 바로 바로 다운로드 창으로 넘어 갈수도 있고 로그인 창이 나올수도 있다 로그인 창이 나오면 로그인을 하시면 된다, 그리고 데스크탑으로 들어갔다면 QR코드가 나올것이다 그것을 안드로이드 핸드폰으로 스캔하면 다운로드 창이 나올수도 있고 로그인 창이나올수도 있다 로그인 창이 나온다면 로그인을 하시면 된다 -이상무-
+## 11. 오른쪽위에 보시면 다운로드 icon이 있을것이다 그걸을 클릭하면 핸드폰이면 바로 바로 다운로드 창으로 넘어 갈수도 있고 로그인 창이 나올수도 있다 로그인 창이 나오면 로그인을 하시면 된다, 그리고 데스크탑으로 들어갔다면 QR코드가 나올것이다 그것을 안드로이드 핸드폰으로 스캔하면 다운로드 창이 나올수도 있고 로그인 창이나올수도 있다 로그인 창이 나온다면 로그인을 하시면 된다(만약 핸드폰버전 보다 배포한 안드로이드 앱이 더 높다면 안드로이드 앱실행이 안될것이다(물론 그건은 지극지 정상적인 일이다)) -이상무-
 
 <br>
 
