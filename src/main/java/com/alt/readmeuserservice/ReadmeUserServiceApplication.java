@@ -7,7 +7,6 @@ import org.springframework.context.annotation.PropertySource;
 @SpringBootApplication
 @PropertySource("classpath:database.properties")
 @PropertySource("classpath:jwt.properties")
-@PropertySource("classpath:redis.properties")
 public class ReadmeUserServiceApplication {
 
 	public static void main(String[] args) {

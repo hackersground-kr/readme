@@ -50,7 +50,7 @@
             , #{type}
         )
     </insert>
-    <insert id="registerStudent" parameterType="com.alt.readmeuserservice.domain.user.Student" keyProperty="idx" useGeneratedKeys="true">
+    <insert id="registerStudent" parameterType="com.alt.readmeuserservice.domain.user.Student" keyProperty="idx">
         INSERT INTO student(
               idx
             , birth
@@ -63,7 +63,7 @@
             , #{grade}
         )
     </insert>
-    <insert id="registerSchool" parameterType="com.alt.readmeuserservice.domain.user.School" keyProperty="idx" useGeneratedKeys="true">
+    <insert id="registerSchool" parameterType="com.alt.readmeuserservice.domain.user.School" keyProperty="idx">
         INSERT INTO school(
              idx
            , type
@@ -78,7 +78,7 @@
             , #{satisfaction}
         )
     </insert>
-    <insert id="registerEnterprise" parameterType="com.alt.readmeuserservice.domain.user.Enterprise" keyProperty="idx" useGeneratedKeys="true">
+    <insert id="registerEnterprise" parameterType="com.alt.readmeuserservice.domain.user.Enterprise" keyProperty="idx">
         INSERT INTO enterprise(
               idx
             , income
