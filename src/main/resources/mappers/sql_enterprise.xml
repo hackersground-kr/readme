@@ -2,7 +2,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.alt.readsearchservice.mapper.UserMapper">
+<mapper namespace="com.alt.readsearchservice.mapper.EnterpriseMapper">
 
     <resultMap id="user" type="com.alt.readsearchservice.domain.user.User">
         <result property="idx" column="idx" />
@@ -14,7 +14,7 @@
         <result property="location" column="location" />
         <result property="intro" column="intro" />
     </resultMap>
-    <resultMap id="school" type="com.alt.readsearchservice.domain.user.School">
+    <resultMap id="enterprise" type="com.alt.readsearchservice.domain.user.Enterprise">
         <result property="idx" column="idx" />
         <result property="name" column="name" />
         <result property="image" column="image" />
@@ -23,21 +23,20 @@
         <result property="type" column="type" />
         <result property="location" column="location" />
         <result property="intro" column="intro" />
-        <result property="schoolType" column="birth" />
-        <result property="student" column="student" />
-        <result property="satisfaction" column="satisfaction" />
+        <result property="income" column="income" />
+        <result property="employee" column="employee" />
     </resultMap>
 
-    <select id="getByEmail" resultMap="school">
+    <select id="getByEmail" resultMap="enterprise">
         SELECT * FROM user u
-        INNER JOIN school s
+        INNER JOIN enterprise s
         ON u.idx = s.idx
 
         WHERE email = #{email}
     </select>
-    <select id="getByName" resultMap="school">
+    <select id="getByName" resultMap="enterprise">
         SELECT * FROM user u
-        INNER JOIN school s
+        INNER JOIN enterprise s
         ON u.idx = s.idx
 
         WHERE name LIKE CONCAT('%', #{name}, '%')
