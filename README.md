@@ -147,7 +147,7 @@ $ git checkout Android2
  ## 3. `정적 웹앱`을 검색합니다.
  ## 4. 정적 웹앱을 선택합니다. 
  ## 5. 만들기를 클릭합니다.
- ## <img width="772" alt="스크린샷 2023-06-22 오후 6 05 48" src="https://github.com/hackersground-kr/readme/assets/89149734/27288a3d-c912-4c85-a131-c2049357e161">
+ ## <img width="752" alt="1" src="https://github.com/hackersground-kr/readme/assets/89149734/5897c5a8-59ae-4730-9ead-416ef39b866a">
  
  <br>
  
@@ -159,7 +159,7 @@ $ git checkout Android2
 |계획 유형|무료 선택|
 |Azure Functions API 및 스테이징 환경을 위한 영역|East Asia선택|
 
-<img width="763" alt="스크린샷 2023-06-22 오후 6 54 34" src="https://github.com/hackersground-kr/readme/assets/89149734/370cab71-4709-4c38-8342-4cbbceec420c">
+## <img width="740" alt="2" src="https://github.com/hackersground-kr/readme/assets/89149734/4576c9ea-c26c-4416-bb38-1acab7bc6a32">
 
 <br>
 
@@ -170,7 +170,7 @@ $ git checkout Android2
 |리포지토리|readme 선택|
 |분기|Web 선택|
 
-<img width="742" alt="스크린샷 2023-06-22 오후 6 58 22" src="https://github.com/hackersground-kr/readme/assets/89149734/0430b452-80e8-4bdb-b641-a36085859606">
+## <img width="748" alt="3" src="https://github.com/hackersground-kr/readme/assets/89149734/3d3d3783-4a6d-4060-ad1e-aaf2bd262fd9">
 
 <br>
 
