@@ -19,9 +19,15 @@ public class SearchServiceImpl implements SearchService {
     private final SchoolMapper schoolMapper;
     private final EnterpriseMapper enterpriseMapper;
     public Student getStudentByEmail(String email) {
-        return studentMapper.getByEmail(email);
+        Student student = studentMapper.getByEmail(email);
+        student.setBelongName(schoolMapper.get(student.getBelong()).getName());
+        return student;
     }
     public List<Student> getStudentByName(String name) {
+        List<Student> students = studentMapper.getByName(name);
+        for(int i = 0; i < 10; i++) {
+            students.get(i).setBelongName(schoolMapper.get(students.get(i).getBelong()).getName());
+        }
         return studentMapper.getByName(name);
     }
 

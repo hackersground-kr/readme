@@ -24,10 +24,16 @@
         <result property="location" column="location" />
         <result property="intro" column="intro" />
         <result property="schoolType" column="birth" />
-        <result property="student" column="student" />
         <result property="satisfaction" column="satisfaction" />
     </resultMap>
 
+    <select id="get" resultMap="school">
+        SELECT * FROM user u
+        INNER JOIN school s
+        ON u.idx = s.idx
+
+        WHERE idx = #{idx}
+    </select>
     <select id="getByEmail" resultMap="school">
         SELECT * FROM user u
         INNER JOIN school s

@@ -25,6 +25,7 @@
         <result property="intro" column="intro" />
         <result property="birth" column="birth" />
         <result property="grade" column="grade" />
+        <result property="belong" column="belong" />
     </resultMap>
 
     <select id="getByEmail" resultMap="student">
