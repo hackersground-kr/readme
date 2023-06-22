@@ -4,10 +4,8 @@ import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class TokenInfo {
-    public TokenInfo() {
-
-    }
     private String access;
     private String refresh;
 }

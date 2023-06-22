@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AccountController {
     private final UserService userService;
+    private final RefreshTokenService refreshTokenService;
+    private final JwtTokenProvider jwtTokenProvider;
     @PostMapping("/signup/student")
     public ResponseEntity registerStudent(@RequestBody Student student) {
         student.setType('S');
@@ -38,11 +40,17 @@ public class AccountController {
                 .data(userService.signUpSchool(school))
                 .build();
     }
-    /*@GetMapping("login")
-    public ResponseEntity login(LoginRequest request) {
+    @GetMapping("/refresh")
+    public org.springframework.http.ResponseEntity<?> refresh(@CookieValue("refresh-token") String refresh) {
+
+        return refreshTokenService.refresh(jwtTokenProvider.getTokenId(refresh));
+    }
+    @GetMapping("/logout")
+    public ResponseEntity logout(HttpServletResponse response) {
+        userService.logout(response);
         return ResponseEntity.builder()
                 .status(200)
-                .data(userService.login(request))
+                .data("logout success")
                 .build();
-    }*/
+    }
 }

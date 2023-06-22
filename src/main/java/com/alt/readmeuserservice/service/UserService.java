@@ -9,4 +9,5 @@ public interface UserService {
     public User signUpEnterprise(Enterprise enterprise);
     public User signUpSchool(School school);
     public TokenInfo login(LoginRequest request);
+    public void logout(HttpServletResponse response);
 }

@@ -29,6 +29,7 @@ public class UserServiceImpl implements UserService {
     private final PasswordEncoder passwordEncoder;
     private final JwtTokenProvider jwtTokenProvider;
     private final RefreshTokenService refreshTokenService;
+    private final CookieProvider cookieProvider;
 
     @Override
     @Transactional
@@ -62,7 +63,7 @@ public class UserServiceImpl implements UserService {
         User user = userMapper.getByEmail(request.getEmail());
         if(user == null) throw new GlobalException(HttpStatus.UNAUTHORIZED, "user not found");
         if(passwordEncoder.matches(request.getPassword(), user.getPassword())) {
-            TokenInfo tokenInfo = new TokenInfo();
+            TokenInfo tokenInfo = TokenInfo.builder().build();
             UserForSecurity security = UserForSecurity.builder().user(user).build();
             List<String> roles = security.getAuthorities()
                     .stream()
@@ -77,5 +78,14 @@ public class UserServiceImpl implements UserService {
         } else {
             throw new GlobalException(HttpStatus.UNAUTHORIZED, "password not match");
         }
+    }
+
+    @Override
+    public void logout(HttpServletResponse response) {
+        Cookie access = cookieProvider.of(cookieProvider.removeAccessTokenCookie());
+        Cookie refresh = cookieProvider.of(cookieProvider.removeRefreshTokenCookie());
+
+        response.addCookie(access);
+        response.addCookie(refresh);
     }
 }
