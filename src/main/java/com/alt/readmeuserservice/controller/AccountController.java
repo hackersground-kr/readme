@@ -2,6 +2,9 @@ package com.alt.readmeuserservice.controller;
 
 import com.alt.readmeuserservice.JwtTokenProvider;
 import com.alt.readmeuserservice.domain.response.ResponseEntity;
+import com.alt.readmeuserservice.domain.user.Enterprise;
+import com.alt.readmeuserservice.domain.user.School;
+import com.alt.readmeuserservice.domain.user.Student;
 import com.alt.readmeuserservice.domain.user.User;
 import com.alt.readmeuserservice.service.RefreshTokenService;
 import com.alt.readmeuserservice.service.UserService;
@@ -14,11 +17,25 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AccountController {
     private final UserService userService;
-    @PostMapping("/signup.do")
-    public ResponseEntity register(@RequestBody User user) {
+    @PostMapping("/signup/student")
+    public ResponseEntity registerStudent(@RequestBody Student student) {
         return ResponseEntity.builder()
                 .status(200)
-                .data(userService.signUp(user))
+                .data(userService.signUpStudent(student))
+                .build();
+    }
+    @PostMapping("/signup/enterprise")
+    public ResponseEntity registerEnterprise(@RequestBody Enterprise enterprise) {
+        return ResponseEntity.builder()
+                .status(200)
+                .data(userService.signUpEnterprise(enterprise))
+                .build();
+    }
+    @PostMapping("/signup/School")
+    public ResponseEntity registerSchool(@RequestBody School school) {
+        return ResponseEntity.builder()
+                .status(200)
+                .data(userService.signUpSchool(school))
                 .build();
     }
     @GetMapping("/logout.do")

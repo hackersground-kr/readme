@@ -4,7 +4,7 @@
 
 <mapper namespace="com.alt.readmeuserservice.mapper.UserMapper">
 
-    <resultMap id="result" type="com.alt.readmeuserservice.domain.user.User">
+    <resultMap id="user" type="com.alt.readmeuserservice.domain.user.User">
         <result property="idx" column="idx" />
         <result property="name" column="name" />
         <result property="image" column="image" />
@@ -13,6 +13,22 @@
         <result property="type" column="type" />
         <result property="location" column="location" />
         <result property="intro" column="intro" />
+    </resultMap>
+    <resultMap id="student" type="com.alt.readmeuserservice.domain.user.Student">
+        <result property="idx" column="idx" />
+        <result property="birth" column="birth" />
+        <result property="grade" column="grade" />
+    </resultMap>
+    <resultMap id="school" type="com.alt.readmeuserservice.domain.user.School">
+        <result property="idx" column="idx" />
+        <result property="type" column="type" />
+        <result property="student" column="student" />
+        <result property="satisfaction" column="satisfaction" />
+    </resultMap>
+    <resultMap id="enterprise" type="com.alt.readmeuserservice.domain.user.Enterprise">
+        <result property="idx" column="idx" />
+        <result property="income" column="income" />
+        <result property="employee" column="employee" />
     </resultMap>
     <select id="getByEmail" resultMap="result">
         SELECT * FROM user WHERE email = #{email};
@@ -32,6 +48,47 @@
             , #{location}
             , #{password}
             , #{type}
+        )
+    </insert>
+    <insert id="registerStudent" parameterType="com.alt.readmeuserservice.domain.user.Student" keyProperty="idx" useGeneratedKeys="true">
+        INSERT INTO student(
+              idx
+            , birth
+            , grade
+        )
+        VALUE
+        (
+            #{idx}
+            , #{birth}
+            , #{grade}
+        )
+    </insert>
+    <insert id="registerSchool" parameterType="com.alt.readmeuserservice.domain.user.School" keyProperty="idx" useGeneratedKeys="true">
+        INSERT INTO school(
+             idx
+           , type
+           , student
+           , satisfaction
+        )
+        VALUE
+        (
+            #{idx}
+            , #{type}
+            , #{student}
+            , #{satisfaction}
+        )
+    </insert>
+    <insert id="registerEnterprise" parameterType="com.alt.readmeuserservice.domain.user.Enterprise" keyProperty="idx" useGeneratedKeys="true">
+        INSERT INTO enterprise(
+              idx
+            , income
+            , employee
+        )
+        VALUE
+        (
+              #{idx}
+            , #{income}
+            , #{employee}
         )
     </insert>
 </mapper>
