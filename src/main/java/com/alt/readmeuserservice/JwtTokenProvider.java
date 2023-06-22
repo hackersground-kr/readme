@@ -32,7 +32,7 @@ public class JwtTokenProvider {
     }
 
     // 유저 정보를 가지고 AccessToken, RefreshToken 을 생성하는 메서드
-    public String generateAccessToken(String userName, String uri, List<String> roles) {
+    public String generateAccessToken(String userName, List<String> roles) {
         Claims claims = Jwts.claims().setSubject(userName);
         claims.put("roles", roles);
 
@@ -43,7 +43,6 @@ public class JwtTokenProvider {
                 )
                 .setIssuedAt(new Date())
                 .signWith(SECRET, SignatureAlgorithm.HS256)
-                .setIssuer(uri)
                 .compact();
     }
 

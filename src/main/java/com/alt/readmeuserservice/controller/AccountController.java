@@ -2,10 +2,7 @@ package com.alt.readmeuserservice.controller;
 
 import com.alt.readmeuserservice.JwtTokenProvider;
 import com.alt.readmeuserservice.domain.response.ResponseEntity;
-import com.alt.readmeuserservice.domain.user.Enterprise;
-import com.alt.readmeuserservice.domain.user.School;
-import com.alt.readmeuserservice.domain.user.Student;
-import com.alt.readmeuserservice.domain.user.User;
+import com.alt.readmeuserservice.domain.user.*;
 import com.alt.readmeuserservice.service.RefreshTokenService;
 import com.alt.readmeuserservice.service.UserService;
 import jakarta.servlet.http.HttpServletResponse;
@@ -41,12 +38,11 @@ public class AccountController {
                 .data(userService.signUpSchool(school))
                 .build();
     }
-    @GetMapping("/logout.do")
-    public ResponseEntity logout(HttpServletResponse response) {
-        userService.logout(response);
+    /*@GetMapping("login")
+    public ResponseEntity login(LoginRequest request) {
         return ResponseEntity.builder()
                 .status(200)
-                .data("logout success")
+                .data(userService.login(request))
                 .build();
-    }
+    }*/
 }

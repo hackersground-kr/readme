@@ -44,7 +44,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         this.refreshTokenServiceImpl = refreshTokenServiceImpl;
         this.cookieProvider = cookieProvider;
 
-        setFilterProcessesUrl("/login.do");
+        setFilterProcessesUrl("/login");
     }
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     private final JwtTokenProvider jwtTokenProvider;
@@ -84,7 +84,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         String refreshUUID = UUID.randomUUID().toString();
 
         // response body에 넣어줄 access token 및 expired time 생성
-        String accessToken = jwtTokenProvider.generateAccessToken(userId, request.getRequestURI(), roles);
+        String accessToken = jwtTokenProvider.generateAccessToken(userId, roles);
         String refreshToken = jwtTokenProvider.generateRefreshToken(refreshUUID);
 
         // redis에 새로 발행된 refresh token 값 추가
