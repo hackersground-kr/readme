@@ -62,16 +62,68 @@ export const Signup = () => {
         {selectedOption === "학교" && (
           <S.FormTypeInput
             type="text"
-            placeholder="학교 생성"
+            placeholder="학교 이름"
             name="school"
             onChange={onSignUpChange}
           />
         )}
 
+        {selectedOption === "학교" && (
+          <S.FormTypeInputNumber
+            type="number"
+            placeholder="학생 수"
+            name="student"
+            onChange={onSignUpChange}
+          />
+        )}
+
+        {selectedOption === "학교" && (
+          <label>
+            <S.FormRadioType
+              type="radio"
+              name="type"
+              value="고등학교"
+              id="H"
+              // checked={selectedType === "고등학교"}
+              onChange={onSignUpChange}
+            />
+            <S.RadioTextType>고등학교</S.RadioTextType>
+            <S.FormRadioType2
+              type="radio"
+              name="type"
+              value="대학교"
+              id="u"
+              // checked={selectedType === "대학교"}
+              onChange={onSignUpChange}
+            />
+            <S.RadioTextType2>대학교</S.RadioTextType2>
+            <S.FormRadioType3
+              type="radio"
+              name="type"
+              value="대학원"
+              id="U"
+              // checked={selectedType === "대학원"}
+              onChange={onSignUpChange}
+            />
+            <S.RadioTextType3>대학원</S.RadioTextType3>
+            <S.FormRadioType4
+              type="radio"
+              name="type"
+              value="기타"
+              id="N"
+              // checked={selectedType === "기타"}
+              onChange={onSignUpChange}
+            />
+            <S.RadioTextType4>기타</S.RadioTextType4>
+          </label>
+        )}
+
+        <S.FormTypeInput2 type="text" placeholder="주소" name="adress" onChange={onSignUpChange} />
+
         {selectedOption === "기업" && (
           <S.FormTypeInput
             type="text"
-            placeholder="기업 생성"
+            placeholder="기업 이름"
             name="company"
             onChange={onSignUpChange}
           />
