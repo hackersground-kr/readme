@@ -38,9 +38,9 @@
 <br>
 - Backend
 <br>
- ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.<br>
- ## 2. App Services [웹 앱] 만들기를 만듭니다.<br>
- ## 3. `정적 웹앱`을 생성합니다.<br>
+ ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.
+ ## 2. App Services [웹 앱] 만들기를 만듭니다.
+ ## 3. `정적 웹앱`을 생성합니다.
  ## 4. 총 2개의 서비스를 생성합니다.
  <br>
  `기본`
