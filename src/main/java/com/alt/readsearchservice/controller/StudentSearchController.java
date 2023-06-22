@@ -6,17 +6,17 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/student")
 @RequiredArgsConstructor
 public class StudentSearchController {
     private final SearchService searchService;
-    @GetMapping("/student")
+    @GetMapping("/")
     public ResponseEntity getStudentByEmail(@RequestParam String email) {
         return ResponseEntity.builder()
                 .data(searchService.getStudentByEmail(email))
                 .build();
     }
-    @GetMapping("/student/name")
+    @GetMapping("/name")
     public ResponseEntity getStudentByName(@RequestParam String name) {
         return ResponseEntity.builder()
                 .data(searchService.getStudentByName(name))

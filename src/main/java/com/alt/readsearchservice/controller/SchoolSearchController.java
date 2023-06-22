@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/school")
 @RequiredArgsConstructor
 public class SchoolSearchController {
     private final SearchService searchService;
-    @GetMapping("/school")
+    @GetMapping("/")
     public ResponseEntity getSchoolByEmail(@RequestParam String email) {
         return ResponseEntity.builder()
                 .data(searchService.getSchoolByEmail(email))
                 .build();
     }
-    @GetMapping("/school/name")
+    @GetMapping("/name")
     public ResponseEntity getSchoolByName(@RequestParam String name) {
         return ResponseEntity.builder()
                 .data(searchService.getSchoolByName(name))
