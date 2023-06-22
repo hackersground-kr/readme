@@ -21,8 +21,11 @@ jobs:
         with:
           java-version: '17'
 
-      - name: Build with Maven
-        run: mvn clean install
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew clean build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -50,4 +53,4 @@ jobs:
           app-name: 'back-search-service'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9BE0C2E1A9344993A540FA3278F3E9D1 }}
-          package: '*.jar'
+          package: 'readme-user-service-0.0.1-SNAPSHOT.jar'
