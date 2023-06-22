@@ -32,7 +32,10 @@ public class SearchServiceImpl implements SearchService {
     }
 
     public School getSchoolByEmail(String email) {
-        return schoolMapper.getByEmail(email);
+        School school = schoolMapper.getByEmail(email);
+        school.setStudent(schoolMapper.getStudentCount(school.getIdx()));
+
+        return school;
     }
     public List<School> getSchoolByName(String name) {
         return schoolMapper.getByName(name);

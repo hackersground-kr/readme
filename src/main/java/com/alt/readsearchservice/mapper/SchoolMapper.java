@@ -11,6 +11,9 @@ public interface SchoolMapper {
     public School get(
             @Param("idx") Long idx
     );
+    public Integer getStudentCount(
+            @Param("idx") Long idx
+    );
     public School getByEmail(
             @Param("email") String email
     );

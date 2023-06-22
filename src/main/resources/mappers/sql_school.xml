@@ -34,6 +34,12 @@
 
         WHERE u.idx = #{idx}
     </select>
+    <select id="getStudentCount" resultMap="int">
+        SELECT COUNT(*) AS count
+        FROM student
+
+        where belong = #{idx};
+    </select>
     <select id="getByEmail" resultMap="school">
         SELECT * FROM user u
         INNER JOIN school s
