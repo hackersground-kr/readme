@@ -53,7 +53,7 @@
 |런타임 스택|Java 17 SE|
 |운영체제|Linux|
 |지역|east asia|
- <br>
+
  `배포`
   <br>
 |설정|값|
@@ -62,10 +62,14 @@
 |조직|hackersground-kr 선택|
 |리포지토리|readme 선택|
 |분기|back-user-service 선택|
+
  <br>
+
  ## 5. 검토후 생성합니다.
+
 <br>
 <br>
+
 - Web
  ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.
  ## 2. 리소스 만들기를 선택합니다.
