@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class StudentSearchController {
     private final SearchService searchService;
-    @GetMapping("/")
+    @GetMapping("/email")
     public ResponseEntity getStudentByEmail(@RequestParam String email) {
         return ResponseEntity.builder()
                 .data(searchService.getStudentByEmail(email))

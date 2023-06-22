@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class SchoolSearchController {
     private final SearchService searchService;
-    @GetMapping("/")
+    @GetMapping("/email")
     public ResponseEntity getSchoolByEmail(@RequestParam String email) {
         return ResponseEntity.builder()
                 .data(searchService.getSchoolByEmail(email))

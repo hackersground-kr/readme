@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class EnterpriseSearchController {
     private final SearchService searchService;
-    @GetMapping("/")
+    @GetMapping("/email")
     public ResponseEntity getEnterpriseByEmail(@RequestParam String email) {
         return ResponseEntity.builder()
                 .data(searchService.getEnterpriseByEmail(email))
