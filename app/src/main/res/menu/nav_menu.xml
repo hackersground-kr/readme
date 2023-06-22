@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
     <item
-        android:id="@+id/my_page"
-        app:showAsAction="ifRoom"
+        android:id="@+id/mypageFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_user"
+        android:title="내 정보"/>
+
+    <item
+        android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/icon_home"
-        android:title="첫번째" />
+        android:title="홈"/>
+
     <item
-        android:id="@+id/home_page"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_pets"
-        android:title="두번째" />
-    <item
-        android:id="@+id/favorites_page"
-        app:showAsAction="ifRoom"
+        android:id="@+id/favoritesFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_analytics"
-        android:title="세번째" />
+        android:icon="@drawable/icon_heart"
+        android:title="관심 목록"/>
+
+
 </menu>

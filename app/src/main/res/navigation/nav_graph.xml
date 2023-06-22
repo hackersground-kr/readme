@@ -5,28 +5,25 @@
     android:id="@+id/nav_graph"
     app:startDestination="@+id/homeFragment">
 
+
+
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.hackathon.readmeandroid.view.fragment.main.MyPageFragment"
+        android:label="MyPageFragment"
+        tools:layout="@layout/fragment_my_page" />
+
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.heyhong.fragment.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.hackathon.readmeandroid.view.fragment.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" />
 
     <fragment
-        android:id="@+id/buildingFragment"
-        android:name="com.example.heyhong.fragment.BuildingFragment"
-        android:label="BuildingFragment"
-        tools:layout="@layout/fragment_building" />
+        android:id="@+id/favoritesFragment"
+        android:name="com.hackathon.readmeandroid.view.fragment.main.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites" />
 
-    <fragment
-        android:id="@+id/facilityFragment"
-        android:name="com.example.heyhong.fragment.FacilityFragment"
-        android:label="FacilityFragment"
-        tools:layout="@layout/fragment_facility" />
-
-    <fragment
-        android:id="@+id/noticeFragment"
-        android:name="com.example.heyhong.fragment.NoticeFragment"
-        android:label="NoticeFragment"
-        tools:layout="@layout/fragment_notice" />
 
 </navigation>

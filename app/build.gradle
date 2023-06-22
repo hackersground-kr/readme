@@ -28,7 +28,7 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
     viewBinding {
         enabled = true
@@ -37,8 +37,10 @@ android {
 
 dependencies {
 
-    // material design(BottomNavigationView)
-    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
 
     //app center
     def appCenterSdkVersion = '4.4.5'
