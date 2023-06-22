@@ -1,0 +1,26 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.alt.readmeuserservice.mapper.UserMapper">
+
+    <resultMap id="user" type="com.alt.readmeuserservice.domain.user.User">
+        <result property="idx" column="idx" />
+        <result property="name" column="name" />
+        <result property="image" column="image" />
+        <result property="email" column="email" />
+        <result property="password" column="password" />
+        <result property="type" column="type" />
+        <result property="location" column="location" />
+        <result property="intro" column="intro" />
+    </resultMap>
+    <resultMap id="student" type="com.alt.readmeuserservice.domain.user.Student">
+        <result property="idx" column="idx" />
+        <result property="birth" column="birth" />
+        <result property="grade" column="grade" />
+    </resultMap>
+
+    <select id="getByEmail" resultMap="user">
+        SELECT * FROM user WHERE email = #{email};
+    </select>
+</mapper>
