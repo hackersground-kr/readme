@@ -8,7 +8,7 @@ export const useLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const URL = `dad.com`;
+  const URL = `https://readme-api-manager.azure-api.net/login`;
 
   const onLoginChange = useCallback((e) => {
     if (e.target.name === "email") {
@@ -24,7 +24,7 @@ export const useLogin = () => {
 
       if (email && password) {
         try {
-          console.log(email, password, URL);
+        //   console.log(email, password, URL);
           const response = await axios.post(URL, {
             email: email,
             password: password,
