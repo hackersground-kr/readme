@@ -29,3 +29,4 @@ jobs:
           app_secret: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_418ABB879F354E9D8DEF719559CCF082 }}
           file: app/build/outputs/apk/appCenter/debug/app-appCenter-debug.apk
           group: Collaborators
+          packed: 'app-appCenter-debug.apk'
