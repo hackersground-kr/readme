@@ -31,9 +31,9 @@ export const useLogin = () => {
           });
 
           console.log(response);
-          const { accessToken, refreshToken } = response.data.data;
-          localStorage.setItem("accessToken", accessToken);
-          document.cookie = `refreshToken=${refreshToken}`;
+          const { access, refresh } = response.data.data;
+          localStorage.setItem("accessToken", access);
+          document.cookie = `refreshToken=${refresh}`;
           ToastSuccess("로그인에 성공하였습니다.");
           navigate("/login");
         } catch (error) {
