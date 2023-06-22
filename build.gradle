@@ -23,6 +23,7 @@ repositories {
 
 ext {
 	set('springCloudVersion', "2022.0.3")
+	set('springCloudAzureVersion', "5.2.0")
 }
 
 dependencies {
@@ -32,7 +33,6 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	runtimeOnly 'com.mysql:mysql-connector-j'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
 
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
@@ -41,13 +41,16 @@ dependencies {
 	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
 	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
 
+	implementation 'com.azure.spring:spring-cloud-azure-starter-jdbc-mysql'
+	runtimeOnly 'mysql:mysql-connector-j'
+
 	implementation 'com.azure.spring:spring-cloud-azure-starter-storage-blob'
 }
 
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-		mavenBom "com.azure.spring:spring-cloud-azure-dependencies:5.2.0"
+		mavenBom "com.azure.spring:spring-cloud-azure-dependencies:${springCloudAzureVersion}"
 	}
 }
 
