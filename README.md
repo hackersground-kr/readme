@@ -63,8 +63,8 @@ $ git checkout Android2
 
  ## 1. [Azure포털](https://portal.azure.com/#home)로 이동합니다.
  ## 2. App Services [웹 앱] 만들기를 만듭니다.
- ## 3. `정적 웹앱`을 생성합니다.
-
+ ## 3. `정적 웹앱`을 생성합니다. 총 2개
+ `1 번째`
  `기본`
   <br>
 |설정|값|
@@ -84,6 +84,28 @@ $ git checkout Android2
 |리포지토리|readme 선택|
 |분기|back-user-service 선택|
 
+<br>
+
+ `2 번째`
+ `기본`
+  <br>
+|설정|값|
+|:---|:---|
+|이름|readme-search-service|
+|게시|코드|
+|런타임 스택|Java 17 SE|
+|운영체제|Linux|
+|지역|east asia|
+
+ `배포`
+  <br>
+|설정|값|
+|:---|:---|
+|원본|GitHub 선택|
+|조직|hackersground-kr 선택|
+|리포지토리|readme 선택|
+|분기|back-search-service 선택|
+
  <br>
 
  ## 5. 검토후 생성합니다.
@@ -100,10 +122,22 @@ $ git checkout Android2
 |관리자 이메일|본인 이메일|
 |사용량|99.95% SLA|
 
+ ## ! 두 서비스 모드 cors를 허용해 주어야 함 !
+
 <br>
 
  ## 7. readme-api-manager > api > Create from Azure resource > App Service 정의
  ## 8. browse를 누르고 이전에 만든 readme-user-service 선택 > API URL suffix 는 user로 맟추고 생성
+ ## 9. 한번더 browse를 누르고 이전에 만든 readme-search-service 선택 > API URL suffix 는 search로 맟추고 생성
+ ## 10. Apis의 api > 두 API를 각각 선택한 후 Inbound processing에 policies 추가 > cors 선택 후..
+ origin
+ https://orange-water-0be200a00.3.azurestaticapps.net
+ http://192.168.225.26:3000
+ methods
+ *
+ headers
+ *
+ 로 설정
 
 <br>
 
