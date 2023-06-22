@@ -1,5 +1,6 @@
 package com.alt.readsearchservice.service.impl;
 
+import com.alt.readsearchservice.domain.Purpose;
 import com.alt.readsearchservice.domain.user.Enterprise;
 import com.alt.readsearchservice.domain.user.School;
 import com.alt.readsearchservice.domain.user.Student;
@@ -65,6 +66,11 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public List<Student> getPurposeByEnterprise(String email) {
         return purposeMapper.getByEnterpriseIdx(enterpriseMapper.getByEmail(email).getIdx());
+    }
+
+    @Override
+    public void purposeRegister(Purpose purpose) {
+        purposeMapper.register(purpose);
     }
 
     @Override

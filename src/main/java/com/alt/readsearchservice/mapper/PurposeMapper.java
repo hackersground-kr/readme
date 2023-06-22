@@ -1,5 +1,6 @@
 package com.alt.readsearchservice.mapper;
 
+import com.alt.readsearchservice.domain.Purpose;
 import com.alt.readsearchservice.domain.user.Enterprise;
 import com.alt.readsearchservice.domain.user.Student;
 import org.apache.ibatis.annotations.Mapper;
@@ -14,5 +15,8 @@ public interface PurposeMapper {
     );
     public List<Student> getByEnterpriseIdx(
             @Param("idx") Long idx
+    );
+    public void register(
+            Purpose purpose
     );
 }

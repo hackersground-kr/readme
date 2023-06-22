@@ -54,4 +54,15 @@
 
         WHERE p.enterprise_idx = #{idx}
     </select>
+    <insert id="register" parameterType="com.alt.readsearchservice.domain.Purpose" useGeneratedKeys="true" keyProperty="idx">
+        INSERT INTO purpose (
+            student_idx
+            , enterprise_idx
+        )
+        VALUE
+        (
+            #{studentIdx}
+            , #{enterpriseIdx}
+        )
+    </insert>
 </mapper>
