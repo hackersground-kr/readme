@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/homeFragment">
+
+
+
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.hackathon.readmeandroid.view.fragment.main.MyPageFragment"
+        android:label="MyPageFragment"
+        tools:layout="@layout/fragment_my_page" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hackathon.readmeandroid.view.fragment.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.hackathon.readmeandroid.view.fragment.main.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites" />
+
+
+</navigation>

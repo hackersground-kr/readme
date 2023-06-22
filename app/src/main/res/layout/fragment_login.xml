@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.account.LoginFragment">
+    tools:context=".view.activity.main.MainActivity">
 
     <TextView
         android:id="@+id/readme"
@@ -20,6 +19,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+</FrameLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,6 +66,7 @@
         android:background="@drawable/edittext_background"
         android:hint="비밀번호를 입력해주세요"
         android:paddingStart="20dp"
+        android:inputType="textPassword"
         android:textSize="13sp"
         android:layout_marginTop="60dp"
         android:textColorHint="#4D636363"
@@ -72,7 +75,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/loginButton"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="180dp"
@@ -93,7 +96,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton">
+        app:layout_constraintTop_toBottomOf="@+id/loginButton">
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,6 +104,8 @@
             android:text="계정이 없으신가요?"
             android:textColor="#BFBFBF"/>
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signup_text"
+            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/pretendard"
@@ -109,3 +114,4 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> Stashed changes

@@ -16,17 +16,25 @@
         android:theme="@style/Theme.ReadmeAndroid"
         tools:targetApi="31" >
         <activity
-            android:name=".view.activity.account.MainActivity"
+<<<<<<< Updated upstream
+            android:name=".view.activity.main.MainActivity"
             android:exported="true" >
             <intent-filter>
             <action android:name="android.intent.action.MAIN" />
+=======
+            android:name=".view.activity.account.MainActivity"
+            android:exported="false" >
+>>>>>>> Stashed changes
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
             android:name=".view.activity.account.AccountActivity"
-            android:exported="false" >
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

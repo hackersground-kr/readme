@@ -6,11 +6,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragment.account.SignupFragment">
 
+    <EditText
+        android:id="@+id/text_mail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/pretendard"
+        android:text="이메일"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/pretendard"
+        android:text="비밀번호"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_mail" />
+
+    <EditText
+        android:id="@+id/text_school_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/pretendard"
+        android:text="실명을 입력하세요"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <EditText
+        android:id="@+id/text_check_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/pretendard"
+        android:text="비밀번호"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/pretendard"
+        android:text="비밀번호 확인"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_check_password"
+        app:layout_constraintStart_toStartOf="@+id/text_check_password" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/pretendard"
         android:text="회원가입"
@@ -22,98 +86,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/pretendard"
-        android:text="회원가입"
-        android:textColor="#727272"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_mail"
-        app:layout_constraintStart_toStartOf="@+id/text_mail" />
-
-    <EditText
-        android:id="@+id/text_mail"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:fontFamily="@font/pretendard"
-        android:layout_marginTop="50dp"
-        android:text="이메일"
-        android:textColor="#BFBFBF"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/pretendard"
-        android:text="비밀번호"
-        android:textColor="#727272"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_password"
-        app:layout_constraintStart_toStartOf="@+id/text_password" />
-
-    <EditText
-        android:id="@+id/text_password"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:fontFamily="@font/pretendard"
-        android:text="비밀번호"
-        android:layout_marginTop="50dp"
-        android:textColor="#BFBFBF"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/text_mail" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/pretendard"
-        android:text="비밀번호 확인"
-        android:textColor="#727272"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_check_password"
-        app:layout_constraintStart_toStartOf="@+id/text_check_password" />
-
-    <EditText
-        android:id="@+id/text_check_password"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:fontFamily="@font/pretendard"
-        android:text="비밀번호"
-        android:layout_marginTop="50dp"
-        android:textColor="#BFBFBF"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/text_password" />
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/pretendard"
-        android:text="이름"
-        android:textColor="#727272"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_name"
-        app:layout_constraintStart_toStartOf="@+id/text_name" />
-
-    <EditText
-        android:id="@+id/text_name"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:fontFamily="@font/pretendard"
-        android:text="실명을 입력하세요"
-        android:textColor="#BFBFBF"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/text_check_password" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/pretendard"
         android:text="학교"
         android:textColor="#727272"
@@ -122,30 +96,69 @@
         app:layout_constraintStart_toStartOf="@+id/text_name" />
 
     <EditText
-        android:id="@+id/text_school_name"
+        android:id="@+id/text_name"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/pretendard"
-        android:layout_marginTop="50dp"
         android:text="실명을 입력하세요"
         android:textColor="#BFBFBF"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+        app:layout_constraintTop_toBottomOf="@+id/text_check_password" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/pretendard"
+        android:text="이름"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_name"
+        app:layout_constraintStart_toStartOf="@+id/text_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/pretendard"
+        android:text="회원가입"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_mail"
+        app:layout_constraintStart_toStartOf="@+id/text_mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/pretendard"
+        android:text="비밀번호"
+        android:textColor="#727272"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_password"
+        app:layout_constraintStart_toStartOf="@+id/text_password" />
+
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/Signup_button"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:color="#17BDFF"
-        android:layout_marginTop="50dp"
         android:background="@drawable/button_background"
         android:fontFamily="@font/pretendard"
         android:text="회원가입"
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_school_name" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

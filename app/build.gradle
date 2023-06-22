@@ -53,20 +53,16 @@ dependencies {
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 
-    def appCenterSdkVersion1 = '5.0.0'
-    implementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion1}"
-    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion1}"
-    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion1}"
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
 
 
-//    def appCenterSdkVersion2 = "3.3.0"
-//    appCenterImplementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion2}"
-//    googlePlayImplementation "com.microsoft.appcenter:appcenter-distribute-play:${appCenterSdkVersion2}"
-    //retrofit 2
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    //glide
     implementation 'com.github.bumptech.glide:glide:4.15.1'
 
     implementation 'androidx.multidex:multidex:2.0.1'
