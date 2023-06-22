@@ -58,7 +58,7 @@ export const useSignup = () => {
               email: email,
               password: password,
               location: userAdress,
-              school_type: selectedType,
+              schoolType: selectedType,
               student: userNumber,
             });
             console.log(response);
