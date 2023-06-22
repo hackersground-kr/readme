@@ -8,4 +8,5 @@ public class Student extends User {
     private String belongName;
     private String birth;
     private Byte grade;
+    private Boolean suggestion;
 }

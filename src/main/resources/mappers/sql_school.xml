@@ -34,7 +34,7 @@
 
         WHERE u.idx = #{idx}
     </select>
-    <select id="getStudentCount" resultMap="int">
+    <select id="getStudentCount">
         SELECT COUNT(*) AS count
         FROM student
 

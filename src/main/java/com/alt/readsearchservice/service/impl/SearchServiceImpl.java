@@ -25,8 +25,8 @@ public class SearchServiceImpl implements SearchService {
     }
     public List<Student> getStudentByName(String name) {
         List<Student> students = studentMapper.getByName(name);
-        for(int i = 0; i < 10; i++) {
-            students.get(i).setBelongName(schoolMapper.get(students.get(i).getBelong()).getName());
+        for (Student student : students) {
+            student.setBelongName(schoolMapper.get(student.getBelong()).getName());
         }
         return studentMapper.getByName(name);
     }
