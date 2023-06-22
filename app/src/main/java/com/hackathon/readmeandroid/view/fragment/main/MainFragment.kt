@@ -1,11 +1,12 @@
-package com.hackathon.readmeandroid.view.fragment.main
-
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.navigation.fragment.findNavController
 import com.hackathon.readmeandroid.R
 import com.hackathon.readmeandroid.controller.MainRecyclerView
 import com.hackathon.readmeandroid.databinding.FragmentMainBinding
@@ -22,6 +23,9 @@ class MainFragment : Fragment() {
             binding.majorListScroll
         }
 
+
+
+
         val titles = listOf(
             "IT/정보통신", "건설", "교육", "금융/은행", "문화/예술/디자인",
             "미디어/광고", "서비스", "의료/제약", "제조/생산/화학", "판매/유통"
@@ -32,16 +36,15 @@ class MainFragment : Fragment() {
             val title = titles[i] // 각 카드마다 다른 title 값 할당
             val imageResId = when (i % 10) {
                 0 -> R.drawable.develop_image
-                1 -> R.drawable.develop_image
-                2 -> R.drawable.struct_image
-                3 -> R.drawable.struct_image
-                4 -> R.drawable.struct_image
-                5 -> R.drawable.struct_image
-                6 -> R.drawable.struct_image
-                7 -> R.drawable.struct_image
-                8 -> R.drawable.struct_image
-                9 -> R.drawable.struct_image
-                else -> R.drawable.develop_image
+                1 -> R.drawable.struct_image
+                2 -> R.drawable.edu_img
+                3 -> R.drawable.capital_img
+                4 -> R.drawable.art_img
+                5 -> R.drawable.advertisement_img
+                6 -> R.drawable.service_img
+                7 -> R.drawable.medical_img
+                8 -> R.drawable.manufacturing_img
+                else -> R.drawable.circulation_img
             }
             items.add(ItemCardMain(imageResId, title))
         }
@@ -49,6 +52,7 @@ class MainFragment : Fragment() {
         val adapter = MainRecyclerView(items)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = GridLayoutManager(context, 2)
+
 
         return binding.root
     }

@@ -17,7 +17,11 @@
         android:id="@+id/homeFragment"
         android:name="com.hackathon.readmeandroid.view.fragment.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/favoritesFragment"

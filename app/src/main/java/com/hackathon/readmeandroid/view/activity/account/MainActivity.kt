@@ -1,19 +1,15 @@
 package com.hackathon.readmeandroid.view.activity.account
 
+import MainFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.hackathon.readmeandroid.R
-import com.hackathon.readmeandroid.controller.MainRecyclerView
 import com.hackathon.readmeandroid.databinding.ActivityMainBinding
-import com.hackathon.readmeandroid.model.ItemCardMain
 import com.hackathon.readmeandroid.view.fragment.main.FavoritesFragment
-import com.hackathon.readmeandroid.view.fragment.main.MainFragment
 import com.hackathon.readmeandroid.view.fragment.main.MyPageFragment
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
